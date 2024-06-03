@@ -1,10 +1,17 @@
 .dino {
     &-avatar {
-        @apply inline-flex aspect-square select-none items-center justify-center overflow-hidden rounded-full bg-neutral-100;
-        width: var(--dino-avatar-size);
+        @apply inline-flex aspect-square h-full w-full select-none items-center justify-center overflow-hidden rounded-full bg-neutral-100;
+
+        container: avatar / inline-size;
 
         &-fallback {
-            font-size: var(--dino-avatar-fallback-size);
+            font-size: 1.5em;
         }
+    }
+}
+
+@container avatar (min-width: 12rem) {
+    .dino-avatar-fallback {
+        font-size: 4em;
     }
 }

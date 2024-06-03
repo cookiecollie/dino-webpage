@@ -1,0 +1,16 @@
+.dino-icon-button {
+    @apply inline-flex aspect-square items-center justify-center rounded-lg;
+
+    transition-duration: var(--dino-global-transition-duration);
+    transition-timing-function: var(--dino-global-transition-timing-func);
+
+    width: var(--dino-icon-button-size, 40px);
+
+    &:is(:hover, :focus-visible) {
+        @apply bg-neutral-100;
+    }
+
+    &:active {
+        @apply bg-neutral-200;
+    }
+}

@@ -1,3 +1,3 @@
-import { Card } from "@radix-ui/themes"
+import { Card } from "./Card"
 export { Card }
 

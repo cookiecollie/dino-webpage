@@ -2,7 +2,10 @@
 
 @import "./components/avatar/styles.css";
 @import "./components/card/styles.css";
+@import "./components/fab/styles.css";
+@import "./components/icon-button/styles.css";
 @import "./components/separator/styles.css";
+@import "./components/tooltip/styles.css";
 
 @tailwind base;
 @tailwind components;
@@ -14,4 +17,10 @@ body,
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     @apply h-full font-medium text-default-black;
+}
+
+:root {
+    --dino-global-transition-duration: 0.2s;
+    --dino-global-transition-delay: 0.2s;
+    --dino-global-transition-timing-func: cubic-bezier(0.4, 0, 0.2, 1);
 }
