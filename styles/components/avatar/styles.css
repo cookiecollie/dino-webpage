@@ -1,0 +1,10 @@
+.dino {
+    &-avatar {
+        @apply inline-flex aspect-square select-none items-center justify-center overflow-hidden rounded-full bg-neutral-100;
+        width: var(--dino-avatar-size);
+
+        &-fallback {
+            font-size: var(--dino-avatar-fallback-size);
+        }
+    }
+}

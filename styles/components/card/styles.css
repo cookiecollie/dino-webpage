@@ -1,0 +1,3 @@
+.dino-card {
+    @apply rounded-xl border border-neutral-200 bg-default-white p-4;
+}

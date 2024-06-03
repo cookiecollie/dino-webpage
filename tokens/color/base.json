@@ -41,6 +41,12 @@
                 "800": { "value": "#454545" },
                 "900": { "value": "#3d3d3d" },
                 "950": { "value": "#2e2e2e" }
+            },
+
+            "default": {
+                "black": { "value": "{color.base.neutral.950}" },
+                "white": { "value": "{color.base.neutral.50}" },
+                "border": { "value": "{color.base.neutral.200}" }
             }
         }
     }

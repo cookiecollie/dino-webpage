@@ -8,9 +8,8 @@
     "editor.wordWrap": "on",
     "workbench.editor.customLabels.patterns": {
         "**/src/components/**/*.tsx": "${filename} - Component",
-        "**/src/components/**/index.tsx": "${filename} - Component || ${dirname} ||",
-        "**/src/stories/**/*.stories.tsx": "${filename} - Story",
-        "**/src/styles/**/styles.css": "${filename} - Style || ${dirname} ||"
+        "**/src/components/**/index.ts": "${filename} - Component || ${dirname} ||",
+        "*/styles/**/styles.css": "${filename} - Style || ${dirname} ||"
     },
     "eslint.validate": ["json"]
 }

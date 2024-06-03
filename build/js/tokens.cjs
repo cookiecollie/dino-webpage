@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 03 Jun 2024 05:13:33 GMT
+ * Generated on Mon, 03 Jun 2024 08:09:21 GMT
  */
 
 module.exports = {
@@ -702,6 +702,71 @@ module.exports = {
             "base",
             "neutral",
             "950"
+          ]
+        }
+      },
+      "default": {
+        "black": {
+          "value": "#2e2e2e",
+          "filePath": "tokens/color/base.json",
+          "isSource": true,
+          "original": {
+            "value": "{color.base.neutral.950}"
+          },
+          "name": "ColorBaseDefaultBlack",
+          "attributes": {
+            "category": "color",
+            "type": "base",
+            "item": "default",
+            "subitem": "black"
+          },
+          "path": [
+            "color",
+            "base",
+            "default",
+            "black"
+          ]
+        },
+        "white": {
+          "value": "#fefefe",
+          "filePath": "tokens/color/base.json",
+          "isSource": true,
+          "original": {
+            "value": "{color.base.neutral.50}"
+          },
+          "name": "ColorBaseDefaultWhite",
+          "attributes": {
+            "category": "color",
+            "type": "base",
+            "item": "default",
+            "subitem": "white"
+          },
+          "path": [
+            "color",
+            "base",
+            "default",
+            "white"
+          ]
+        },
+        "border": {
+          "value": "#d1d1d1",
+          "filePath": "tokens/color/base.json",
+          "isSource": true,
+          "original": {
+            "value": "{color.base.neutral.200}"
+          },
+          "name": "ColorBaseDefaultBorder",
+          "attributes": {
+            "category": "color",
+            "type": "base",
+            "item": "default",
+            "subitem": "border"
+          },
+          "path": [
+            "color",
+            "base",
+            "default",
+            "border"
           ]
         }
       }
