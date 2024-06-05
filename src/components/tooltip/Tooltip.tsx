@@ -13,12 +13,12 @@ import {
     useInteractions,
     useRole,
 } from "@floating-ui/react"
+import { AnimatePresence, motion } from "framer-motion"
 import {
     Children,
     PropsWithChildren,
     ReactElement,
     useEffect,
-    useLayoutEffect,
     useRef,
     useState,
 } from "react"
@@ -41,23 +41,9 @@ export const Tooltip = (props: TooltipProps) => {
             if (element.type === Anchor) setAnchor(element)
             else if (element.type === Content) setContent(element)
         })
-    }, [])
+    }, [children])
 
     const [isOpen, setIsOpen] = useState(false)
-    const [mounted, setMounted] = useState(false)
-
-    const contentRef = useRef<HTMLDivElement>(null)
-
-    useLayoutEffect(() => {
-        if (isOpen) setMounted(isOpen)
-        else {
-            if (contentRef.current) {
-                Promise.allSettled(
-                    contentRef.current.getAnimations().map((a) => a.finished)
-                ).then(() => setMounted(isOpen))
-            }
-        }
-    }, [isOpen])
 
     const arrowRef = useRef(null)
 
@@ -91,37 +77,41 @@ export const Tooltip = (props: TooltipProps) => {
         <>
             <div
                 ref={refs.setReference}
-                {...getReferenceProps}
+                {...getReferenceProps()}
                 className="dino-tooltip-anchor"
             >
                 {anchor}
             </div>
 
-            {mounted && (
-                <FloatingPortal>
-                    <div
-                        ref={refs.setFloating}
-                        style={floatingStyles}
-                        {...getFloatingProps}
-                    >
+            <AnimatePresence>
+                {isOpen && (
+                    <FloatingPortal>
                         <div
-                            className="dino-tooltip-content"
-                            data-is-open={isOpen}
-                            ref={contentRef}
+                            ref={refs.setFloating}
+                            style={floatingStyles}
+                            {...getFloatingProps()}
                         >
-                            {content}{" "}
-                            <FloatingArrow
-                                ref={arrowRef}
-                                context={context}
-                                height={ARROW_HEIGHT}
-                                width={ARROW_HEIGHT * 2}
-                                tipRadius={ARROW_TIP_RADIUS}
-                                className="dino-tooltip-arrow"
-                            />
+                            <motion.div
+                                className="dino-tooltip-content"
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0 }}
+                                transition={{ delay: 0.1 }}
+                            >
+                                {content}{" "}
+                                <FloatingArrow
+                                    ref={arrowRef}
+                                    context={context}
+                                    height={ARROW_HEIGHT}
+                                    width={ARROW_HEIGHT * 2}
+                                    tipRadius={ARROW_TIP_RADIUS}
+                                    className="dino-tooltip-arrow"
+                                />
+                            </motion.div>
                         </div>
-                    </div>
-                </FloatingPortal>
-            )}
+                    </FloatingPortal>
+                )}
+            </AnimatePresence>
         </>
     )
 }

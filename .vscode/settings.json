@@ -9,7 +9,8 @@
     "workbench.editor.customLabels.patterns": {
         "**/src/components/**/*.tsx": "${filename} - Component",
         "**/src/components/**/index.ts": "${filename} - Component || ${dirname} ||",
-        "*/styles/**/styles.css": "${filename} - Style || ${dirname} ||"
+        "*/styles/**/styles.css": "${filename} - Style || ${dirname} ||",
+        "**/src/pages/**/*.tsx": "${filename} - Page"
     },
     "eslint.validate": ["json"]
 }

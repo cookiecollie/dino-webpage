@@ -30,23 +30,29 @@
             },
 
             "neutral": {
-                "50": { "value": "#fefefe" },
-                "100": { "value": "#e7e7e7" },
-                "200": { "value": "#d1d1d1" },
-                "300": { "value": "#b0b0b0" },
-                "400": { "value": "#888888" },
-                "500": { "value": "#6d6d6d" },
-                "600": { "value": "#5d5d5d" },
-                "700": { "value": "#4f4f4f" },
-                "800": { "value": "#454545" },
+                "50": { "value": "#f8f8f8" },
+                "100": { "value": "#f2f2f2" },
+                "200": { "value": "#dcdcdc" },
+                "300": { "value": "#bdbdbd" },
+                "400": { "value": "#989898" },
+                "500": { "value": "#7c7c7c" },
+                "600": { "value": "#656565" },
+                "700": { "value": "#525252" },
+                "800": { "value": "#464646" },
                 "900": { "value": "#3d3d3d" },
                 "950": { "value": "#2e2e2e" }
             },
 
             "default": {
                 "black": { "value": "{color.base.neutral.950}" },
-                "white": { "value": "{color.base.neutral.50}" },
+                "white": { "value": "{color.base.neutral.100}" },
                 "border": { "value": "{color.base.neutral.200}" }
+            },
+
+            "surface": {
+                "main": { "value": "{color.base.default.white}" },
+                "container": { "value": "{color.base.neutral.50}" },
+                "black": { "value": "{color.base.default.black}" }
             }
         }
     }

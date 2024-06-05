@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 03 Jun 2024 08:09:21 GMT
+ * Generated on Wed, 05 Jun 2024 14:14:40 GMT
  */
 
 module.exports = {
@@ -474,11 +474,11 @@ module.exports = {
       },
       "neutral": {
         "50": {
-          "value": "#fefefe",
+          "value": "#f8f8f8",
           "filePath": "tokens/color/base.json",
           "isSource": true,
           "original": {
-            "value": "#fefefe"
+            "value": "#f8f8f8"
           },
           "name": "ColorBaseNeutral50",
           "attributes": {
@@ -495,11 +495,11 @@ module.exports = {
           ]
         },
         "100": {
-          "value": "#e7e7e7",
+          "value": "#f2f2f2",
           "filePath": "tokens/color/base.json",
           "isSource": true,
           "original": {
-            "value": "#e7e7e7"
+            "value": "#f2f2f2"
           },
           "name": "ColorBaseNeutral100",
           "attributes": {
@@ -516,11 +516,11 @@ module.exports = {
           ]
         },
         "200": {
-          "value": "#d1d1d1",
+          "value": "#dcdcdc",
           "filePath": "tokens/color/base.json",
           "isSource": true,
           "original": {
-            "value": "#d1d1d1"
+            "value": "#dcdcdc"
           },
           "name": "ColorBaseNeutral200",
           "attributes": {
@@ -537,11 +537,11 @@ module.exports = {
           ]
         },
         "300": {
-          "value": "#b0b0b0",
+          "value": "#bdbdbd",
           "filePath": "tokens/color/base.json",
           "isSource": true,
           "original": {
-            "value": "#b0b0b0"
+            "value": "#bdbdbd"
           },
           "name": "ColorBaseNeutral300",
           "attributes": {
@@ -558,11 +558,11 @@ module.exports = {
           ]
         },
         "400": {
-          "value": "#888888",
+          "value": "#989898",
           "filePath": "tokens/color/base.json",
           "isSource": true,
           "original": {
-            "value": "#888888"
+            "value": "#989898"
           },
           "name": "ColorBaseNeutral400",
           "attributes": {
@@ -579,11 +579,11 @@ module.exports = {
           ]
         },
         "500": {
-          "value": "#6d6d6d",
+          "value": "#7c7c7c",
           "filePath": "tokens/color/base.json",
           "isSource": true,
           "original": {
-            "value": "#6d6d6d"
+            "value": "#7c7c7c"
           },
           "name": "ColorBaseNeutral500",
           "attributes": {
@@ -600,11 +600,11 @@ module.exports = {
           ]
         },
         "600": {
-          "value": "#5d5d5d",
+          "value": "#656565",
           "filePath": "tokens/color/base.json",
           "isSource": true,
           "original": {
-            "value": "#5d5d5d"
+            "value": "#656565"
           },
           "name": "ColorBaseNeutral600",
           "attributes": {
@@ -621,11 +621,11 @@ module.exports = {
           ]
         },
         "700": {
-          "value": "#4f4f4f",
+          "value": "#525252",
           "filePath": "tokens/color/base.json",
           "isSource": true,
           "original": {
-            "value": "#4f4f4f"
+            "value": "#525252"
           },
           "name": "ColorBaseNeutral700",
           "attributes": {
@@ -642,11 +642,11 @@ module.exports = {
           ]
         },
         "800": {
-          "value": "#454545",
+          "value": "#464646",
           "filePath": "tokens/color/base.json",
           "isSource": true,
           "original": {
-            "value": "#454545"
+            "value": "#464646"
           },
           "name": "ColorBaseNeutral800",
           "attributes": {
@@ -728,11 +728,11 @@ module.exports = {
           ]
         },
         "white": {
-          "value": "#fefefe",
+          "value": "#f2f2f2",
           "filePath": "tokens/color/base.json",
           "isSource": true,
           "original": {
-            "value": "{color.base.neutral.50}"
+            "value": "{color.base.neutral.100}"
           },
           "name": "ColorBaseDefaultWhite",
           "attributes": {
@@ -749,7 +749,7 @@ module.exports = {
           ]
         },
         "border": {
-          "value": "#d1d1d1",
+          "value": "#dcdcdc",
           "filePath": "tokens/color/base.json",
           "isSource": true,
           "original": {
@@ -767,6 +767,71 @@ module.exports = {
             "base",
             "default",
             "border"
+          ]
+        }
+      },
+      "surface": {
+        "main": {
+          "value": "#f2f2f2",
+          "filePath": "tokens/color/base.json",
+          "isSource": true,
+          "original": {
+            "value": "{color.base.default.white}"
+          },
+          "name": "ColorBaseSurfaceMain",
+          "attributes": {
+            "category": "color",
+            "type": "base",
+            "item": "surface",
+            "subitem": "main"
+          },
+          "path": [
+            "color",
+            "base",
+            "surface",
+            "main"
+          ]
+        },
+        "container": {
+          "value": "#f8f8f8",
+          "filePath": "tokens/color/base.json",
+          "isSource": true,
+          "original": {
+            "value": "{color.base.neutral.50}"
+          },
+          "name": "ColorBaseSurfaceContainer",
+          "attributes": {
+            "category": "color",
+            "type": "base",
+            "item": "surface",
+            "subitem": "container"
+          },
+          "path": [
+            "color",
+            "base",
+            "surface",
+            "container"
+          ]
+        },
+        "black": {
+          "value": "#2e2e2e",
+          "filePath": "tokens/color/base.json",
+          "isSource": true,
+          "original": {
+            "value": "{color.base.default.black}"
+          },
+          "name": "ColorBaseSurfaceBlack",
+          "attributes": {
+            "category": "color",
+            "type": "base",
+            "item": "surface",
+            "subitem": "black"
+          },
+          "path": [
+            "color",
+            "base",
+            "surface",
+            "black"
           ]
         }
       }

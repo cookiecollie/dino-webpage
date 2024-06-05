@@ -1,0 +1,42 @@
+.dino-magnet-group {
+    @apply z-[1];
+    &-wrapper {
+        --dino-magnet-group-indicator-color: rgb(136 136 136 / 0.2);
+        --dino-magnet-group-indicator-rounded: 0.5rem;
+    }
+
+    &-wrapper::after {
+        transition:
+            opacity calc(var(--dino-global-transition-duration)),
+            inset calc(var(--dino-global-transition-duration))
+                calc(var(--dino-global-transition-delay));
+        transition-timing-function: calc(
+            var(--dino-global-transition-timing-func)
+        );
+
+        content: "";
+
+        background-color: var(--dino-magnet-group-indicator-color);
+        border-radius: var(--dino-magnet-group-indicator-rounded);
+
+        @apply pointer-events-none absolute z-0;
+
+        inset: calc(var(--dino-magnet-group-indicator-top) * 1px)
+            calc(100% - var(--dino-magnet-group-indicator-right) * 1px)
+            calc(100% - var(--dino-magnet-group-indicator-bottom) * 1px)
+            calc(var(--dino-magnet-group-indicator-left) * 1px);
+
+        opacity: var(--dino-magnet-group-indicator-active, 0);
+    }
+
+    &-wrapper:hover {
+        --dino-magnet-group-indicator-active: 1;
+    }
+
+    &-wrapper:hover::after {
+        transition:
+            opacity calc(var(--dino-global-transition-duration))
+                calc(var(--dino-global-transition-delay)),
+            inset calc(var(--dino-global-transition-duration));
+    }
+}

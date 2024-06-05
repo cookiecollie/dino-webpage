@@ -1,0 +1,15 @@
+{
+    "pages": {
+        "home": {
+            "card": {
+                "content": {
+                    "title": "Nice to meet ya! My name is Nikko!",
+                    "description": [
+                        "Just a silly lil' guy on the internet. Sometimes an otter, sometimes a dragon.",
+                        "Check the links below if you wanna know more about me."
+                    ]
+                }
+            }
+        }
+    }
+}

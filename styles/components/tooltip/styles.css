@@ -1,22 +1,9 @@
 .dino-tooltip {
     &-content {
-        @apply rounded-lg bg-default-white px-4 py-2 opacity-0 drop-shadow-2;
-
-        transition: opacity;
-        transition-delay: 0.1s;
-        transition-duration: var(--dino-global-transition-duration);
-        transition-timing-function: var(--dino-global-transition-timing-func);
+        @apply bg-surface-container rounded-lg px-4 py-2 text-xs opacity-0 drop-shadow-2;
     }
 
     &-arrow {
-        @apply fill-default-white;
-    }
-
-    &-content[data-is-open="true"] {
-        opacity: 1;
-    }
-
-    &-content[data-is-open="false"] {
-        opacity: 0;
+        @apply fill-surface-container;
     }
 }

@@ -8,7 +8,7 @@
         "build": "tsc && vite build",
         "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
         "preview": "vite preview",
-        "token": "style-dictionary build --config ./style.config.cjs"
+        "tokenize": "style-dictionary build --config ./style.config.cjs"
     },
     "dependencies": {
         "react": "^18.2.0",
@@ -34,11 +34,13 @@
         "eslint-plugin-react": "^7.34.2",
         "eslint-plugin-react-hooks": "^4.6.0",
         "eslint-plugin-react-refresh": "^0.4.6",
+        "framer-motion": "^11.2.10",
         "globals": "^15.3.0",
         "postcss": "^8.4.38",
         "postcss-import": "^16.1.0",
         "prettier": "^3.3.0",
         "prettier-plugin-tailwindcss": "^0.6.1",
+        "react-router-dom": "^6.23.1",
         "style-dictionary": "^3.9.2",
         "tailwindcss": "^3.4.3",
         "typescript": "^5.2.2",
