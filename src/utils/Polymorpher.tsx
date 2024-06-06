@@ -21,3 +21,9 @@ export type PolymorphicProps<
     Omit<ComponentPropsWithoutRef<C>, PropsToOmit<C, P>> & {
         ref?: PolymorphicRef<C>
     }
+
+export type PolymorphicPropsWithoutRef<
+    C extends ElementType,
+    P = object,
+> = PropsWithChildren<P & AsProp<C>> &
+    Omit<ComponentPropsWithoutRef<C>, PropsToOmit<C, P>>

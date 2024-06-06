@@ -9,6 +9,8 @@
 @import "./components/separator/styles.css";
 @import "./components/tooltip/styles.css";
 
+@import "./pages/home/styles.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -10,7 +10,6 @@ import {
 import { ReactElement } from "react"
 import { Link } from "react-router-dom"
 import { Avatar, Fallback, Image } from "../../components/avatar"
-import { Button } from "../../components/button"
 import { Card } from "../../components/card"
 import { IconButton } from "../../components/icon-button"
 import { MagnetGroup } from "../../components/magnet-group"
@@ -46,10 +45,6 @@ export const Home = () => {
         },
     ]
 
-    const test = () => {
-        throw new Error("test")
-    }
-
     return (
         <Card>
             <div className="flex h-fit items-center gap-4">
@@ -73,6 +68,7 @@ export const Home = () => {
                                         href="https://www.twitch.tv/cookiecollie"
                                         target="_blank"
                                         rel="noreferrer"
+                                        iconColor="#6441a5"
                                     >
                                         <TwitchLogo />
                                     </IconButton>
@@ -86,9 +82,10 @@ export const Home = () => {
                                     <IconButton
                                         label="Discord Logo"
                                         as="a"
-                                        href="#"
+                                        href="https://www.twitch.tv/cookiecollie"
                                         target="_blank"
                                         rel="noreferrer"
+                                        iconColor="#7289da"
                                     >
                                         <DiscordLogo />
                                     </IconButton>
@@ -112,10 +109,9 @@ export const Home = () => {
                     <div className="flex flex-1 flex-col justify-center gap-2">
                         <p>{texts.pages.home.card.content.description[0]}</p>
                         <p>{texts.pages.home.card.content.description[1]}</p>
-                        <Button onClick={test}>Test</Button>
                     </div>
 
-                    <MagnetGroup>
+                    <MagnetGroup colorScheme="primary" indicatorStyle="fill">
                         <IconContext.Provider
                             value={{ size: 16, weight: "bold" }}
                         >
@@ -124,7 +120,7 @@ export const Home = () => {
                                     <MagnetItem key={l.key}>
                                         <Link
                                             to={l.key}
-                                            className="inline-flex h-10 items-center gap-2 px-4"
+                                            className="dino-home-magnet-link"
                                         >
                                             <span>{l.icon}</span>
                                             <span>{l.label}</span>

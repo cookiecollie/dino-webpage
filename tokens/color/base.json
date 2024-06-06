@@ -46,13 +46,15 @@
             "default": {
                 "black": { "value": "{color.base.neutral.950}" },
                 "white": { "value": "{color.base.neutral.100}" },
-                "border": { "value": "{color.base.neutral.200}" }
+                "border": { "value": "{color.base.neutral.200}" },
+                "primary": { "value": "{color.base.nikko-blue.400}" }
             },
 
             "surface": {
                 "main": { "value": "{color.base.default.white}" },
                 "container": { "value": "{color.base.neutral.50}" },
-                "black": { "value": "{color.base.default.black}" }
+                "black": { "value": "{color.base.default.black}" },
+                "primary": { "value": "{color.base.nikko-blue.400}" }
             }
         }
     }

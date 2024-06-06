@@ -1,0 +1,10 @@
+.dino-home-magnet-link {
+    @apply inline-flex h-10 items-center gap-2 px-4;
+
+    transition: color calc(var(--dino-global-transition-duration) + 0.1s);
+    transition-timing-function: var(--dino-global-transition-timing-func);
+
+    &:is(:hover, :focus-visible) {
+        @apply text-default-white;
+    }
+}

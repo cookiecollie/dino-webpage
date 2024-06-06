@@ -1,8 +1,6 @@
 .dino-magnet-group {
-    @apply z-[1];
     &-wrapper {
-        --dino-magnet-group-indicator-color: rgb(136 136 136 / 0.2);
-        --dino-magnet-group-indicator-rounded: 0.5rem;
+        @apply z-[1];
     }
 
     &-wrapper::after {
@@ -16,10 +14,7 @@
 
         content: "";
 
-        background-color: var(--dino-magnet-group-indicator-color);
-        border-radius: var(--dino-magnet-group-indicator-rounded);
-
-        @apply pointer-events-none absolute z-0;
+        @apply pointer-events-none absolute z-[-1] rounded-lg border-neutral-300 bg-neutral-200/50;
 
         inset: calc(var(--dino-magnet-group-indicator-top) * 1px)
             calc(100% - var(--dino-magnet-group-indicator-right) * 1px)
@@ -27,6 +22,17 @@
             calc(var(--dino-magnet-group-indicator-left) * 1px);
 
         opacity: var(--dino-magnet-group-indicator-active, 0);
+
+        &[data-color="primary"] {
+            @apply bg-surface-primary;
+        }
+
+        &[data-indicator-style="border"] {
+            @apply border-2 bg-transparent;
+            &[data-color="primary"] {
+                @apply border-nikko-blue-400;
+            }
+        }
     }
 
     &-wrapper:hover {

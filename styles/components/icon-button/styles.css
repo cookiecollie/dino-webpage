@@ -5,12 +5,21 @@
     transition-timing-function: var(--dino-global-transition-timing-func);
 
     width: var(--dino-icon-button-size, 40px);
+    color: var(--dino-icon-button-color);
 
     &:is(:hover, :focus-visible) {
-        @apply bg-neutral-100;
+        @apply bg-neutral-200/50;
     }
 
     &:active {
         @apply bg-neutral-200;
+    }
+
+    &[data-color="neutral"] {
+        @apply text-default-black;
+    }
+
+    &[data-color="primary"] {
+        @apply text-default-primary;
     }
 }

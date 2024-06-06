@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 05 Jun 2024 14:14:40 GMT
+ * Generated on Thu, 06 Jun 2024 18:55:14 GMT
  */
 
 module.exports = {
@@ -768,6 +768,27 @@ module.exports = {
             "default",
             "border"
           ]
+        },
+        "primary": {
+          "value": "#7f99fa",
+          "filePath": "tokens/color/base.json",
+          "isSource": true,
+          "original": {
+            "value": "{color.base.nikko-blue.400}"
+          },
+          "name": "ColorBaseDefaultPrimary",
+          "attributes": {
+            "category": "color",
+            "type": "base",
+            "item": "default",
+            "subitem": "primary"
+          },
+          "path": [
+            "color",
+            "base",
+            "default",
+            "primary"
+          ]
         }
       },
       "surface": {
@@ -832,6 +853,27 @@ module.exports = {
             "base",
             "surface",
             "black"
+          ]
+        },
+        "primary": {
+          "value": "#7f99fa",
+          "filePath": "tokens/color/base.json",
+          "isSource": true,
+          "original": {
+            "value": "{color.base.nikko-blue.400}"
+          },
+          "name": "ColorBaseSurfacePrimary",
+          "attributes": {
+            "category": "color",
+            "type": "base",
+            "item": "surface",
+            "subitem": "primary"
+          },
+          "path": [
+            "color",
+            "base",
+            "surface",
+            "primary"
           ]
         }
       }

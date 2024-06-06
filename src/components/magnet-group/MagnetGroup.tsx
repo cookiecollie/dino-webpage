@@ -6,15 +6,19 @@ import {
     useState,
 } from "react"
 
-interface IndicatorStyleType
-    extends Pick<CSSProperties, "backgroundColor" | "borderRadius"> {}
-
 interface MagnetGroupProps extends HTMLAttributes<HTMLDivElement> {
-    indicatorStyle?: IndicatorStyleType
+    colorScheme?: "neutral" | "primary"
+    indicatorStyle?: "fill" | "border"
 }
 
 export const MagnetGroup = (props: MagnetGroupProps) => {
-    const { children, style, indicatorStyle, ...others } = props
+    const {
+        children,
+        style,
+        colorScheme = "neutral",
+        indicatorStyle = "fill",
+        ...others
+    } = props
 
     const magnetGroupRef = useRef<HTMLDivElement>(null)
     const hoveringRef = useRef<Element | null>(null)
@@ -35,11 +39,6 @@ export const MagnetGroup = (props: MagnetGroupProps) => {
 
                     "--dino-magnet-group-indicator-height": bounds.height,
                     "--dino-magnet-group-indicator-width": bounds.width,
-
-                    "--dino-magnet-group-indicator-color":
-                        indicatorStyle?.backgroundColor,
-                    "--dino-magnet-group-indicator-rounded":
-                        indicatorStyle?.borderRadius,
                 }
 
                 setIndicatorBaseStyle(cssVars as CSSProperties)
@@ -71,6 +70,8 @@ export const MagnetGroup = (props: MagnetGroupProps) => {
             className="dino-magnet-group-wrapper"
             style={{ ...indicatorBaseStyle, ...style }}
             ref={magnetGroupRef}
+            data-color={colorScheme}
+            data-indicator-style={indicatorStyle}
         >
             {children}
         </div>
