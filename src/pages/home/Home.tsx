@@ -10,13 +10,13 @@ import {
 import { ReactElement } from "react"
 import { Link } from "react-router-dom"
 import { Avatar, Fallback, Image } from "../../components/avatar"
-import { Card } from "../../components/card"
 import { IconButton } from "../../components/icon-button"
 import { MagnetGroup } from "../../components/magnet-group"
 import { MagnetItem } from "../../components/magnet-group/MagnetGroup"
 import { Separator } from "../../components/separator"
 import { Anchor, Content, Tooltip } from "../../components/tooltip"
 import texts from "../../static/texts.json"
+import { InCardFragment } from "../InCardFragment"
 
 export const Home = () => {
     const cardLinks: { key: string; label: string; icon: ReactElement }[] = [
@@ -46,7 +46,7 @@ export const Home = () => {
     ]
 
     return (
-        <Card>
+        <InCardFragment>
             <div className="flex h-fit items-center gap-4">
                 <div className="flex flex-col items-center gap-4 px-10 py-4">
                     <span className="w-48">
@@ -68,7 +68,7 @@ export const Home = () => {
                                         href="https://www.twitch.tv/cookiecollie"
                                         target="_blank"
                                         rel="noreferrer"
-                                        iconColor="#6441a5"
+                                        colorScheme="neutral"
                                     >
                                         <TwitchLogo />
                                     </IconButton>
@@ -85,7 +85,7 @@ export const Home = () => {
                                         href="https://www.twitch.tv/cookiecollie"
                                         target="_blank"
                                         rel="noreferrer"
-                                        iconColor="#7289da"
+                                        colorScheme="neutral"
                                     >
                                         <DiscordLogo />
                                     </IconButton>
@@ -132,6 +132,6 @@ export const Home = () => {
                     </MagnetGroup>
                 </div>
             </div>
-        </Card>
+        </InCardFragment>
     )
 }

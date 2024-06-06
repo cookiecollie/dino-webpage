@@ -1,3 +1,9 @@
+import { InCardFragment } from "../InCardFragment"
+
 export const Artworks = () => {
-    return <div>Artworks</div>
+    return (
+        <InCardFragment>
+            <div>Artworks</div>
+        </InCardFragment>
+    )
 }

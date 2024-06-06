@@ -1,3 +1,9 @@
+import { InCardFragment } from "../InCardFragment"
+
 export const AboutMe = () => {
-    return <div>About me</div>
+    return (
+        <InCardFragment>
+            <div>About Me</div>
+        </InCardFragment>
+    )
 }

@@ -5,5 +5,7 @@ import { Error } from "./error"
 import { Home } from "./home"
 import { Viewers } from "./viewers"
 
-export { AboutMe, Artworks, Contacts, Error, Home, Viewers }
+import { InCardFragment } from "./InCardFragment"
+
+export { AboutMe, Artworks, Contacts, Error, Home, InCardFragment, Viewers }
 
