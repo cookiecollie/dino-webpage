@@ -1,5 +1,7 @@
+import { CustomRouter } from "./CustomRouter"
 import type { PolymorphicProps, PolymorphicRef } from "./Polymorpher"
-export { PolymorphicProps, PolymorphicRef }
+
+export { CustomRouter, PolymorphicProps, PolymorphicRef }
 
 export const mergeRefs = <T>(
     refs: Array<React.MutableRefObject<T> | React.LegacyRef<T> | null>
