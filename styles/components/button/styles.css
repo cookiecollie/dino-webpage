@@ -1,7 +1,7 @@
 .dino-button {
-    @apply flex h-10 items-center gap-4 px-4;
+    @apply flex h-10 items-center gap-4 rounded-lg px-4;
 
-    /* &[data-vfx="true"]:hover {
-        @apply;
-    } */
+    &[data-color="primary"] {
+        @apply bg-surface-primary;
+    }
 }

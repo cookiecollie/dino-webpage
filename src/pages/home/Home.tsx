@@ -1,53 +1,16 @@
-import {
-    AddressBook,
-    DiscordLogo,
-    IconContext,
-    Palette,
-    PawPrint,
-    TwitchLogo,
-    User,
-} from "@phosphor-icons/react"
-import { ReactElement } from "react"
-import { Link } from "react-router-dom"
+import { TwitchLogo } from "@phosphor-icons/react"
 import { Avatar, Fallback, Image } from "../../components/avatar"
+import { Button } from "../../components/button"
 import { IconButton } from "../../components/icon-button"
-import { MagnetGroup } from "../../components/magnet-group"
-import { MagnetItem } from "../../components/magnet-group/MagnetGroup"
 import { Separator } from "../../components/separator"
 import { Anchor, Content, Tooltip } from "../../components/tooltip"
 import texts from "../../static/texts.json"
 import { InCardFragment } from "../InCardFragment"
 
 export const Home = () => {
-    const cardLinks: { key: string; label: string; icon: ReactElement }[] = [
-        {
-            key: "about-me",
-            label: "About me",
-            icon: <PawPrint />,
-        },
-
-        {
-            key: "artworks",
-            label: "My artworks",
-            icon: <Palette />,
-        },
-
-        {
-            key: "contacts",
-            label: "Contacts",
-            icon: <AddressBook />,
-        },
-
-        {
-            key: "viewers",
-            label: "Stream viewers",
-            icon: <User />,
-        },
-    ]
-
     return (
         <InCardFragment>
-            <div className="flex h-fit items-center gap-4">
+            <div className="flex items-center gap-4">
                 <div className="flex flex-col items-center gap-4 px-10 py-4">
                     <span className="w-48">
                         <Avatar>
@@ -59,7 +22,7 @@ export const Home = () => {
                     <div className="flex flex-col items-center gap-4">
                         <p className="text-2xl font-bold">Nikko Scribblo</p>
 
-                        <div className="flex gap-2">
+                        <div className="flex">
                             <Tooltip>
                                 <Anchor>
                                     <IconButton
@@ -75,23 +38,6 @@ export const Home = () => {
                                 </Anchor>
 
                                 <Content>Visit Twitch</Content>
-                            </Tooltip>
-
-                            <Tooltip>
-                                <Anchor>
-                                    <IconButton
-                                        label="Discord Logo"
-                                        as="a"
-                                        href="https://www.twitch.tv/cookiecollie"
-                                        target="_blank"
-                                        rel="noreferrer"
-                                        colorScheme="neutral"
-                                    >
-                                        <DiscordLogo />
-                                    </IconButton>
-                                </Anchor>
-
-                                <Content>Message me</Content>
                             </Tooltip>
                         </div>
                     </div>
@@ -111,25 +57,11 @@ export const Home = () => {
                         <p>{texts.pages.home.card.content.description[1]}</p>
                     </div>
 
-                    <MagnetGroup colorScheme="primary" indicatorStyle="fill">
-                        <IconContext.Provider
-                            value={{ size: 16, weight: "bold" }}
-                        >
-                            <div className="flex gap-4">
-                                {cardLinks.map((l) => (
-                                    <MagnetItem key={l.key}>
-                                        <Link
-                                            to={l.key}
-                                            className="dino-home-magnet-link"
-                                        >
-                                            <span>{l.icon}</span>
-                                            <span>{l.label}</span>
-                                        </Link>
-                                    </MagnetItem>
-                                ))}
-                            </div>
-                        </IconContext.Provider>
-                    </MagnetGroup>
+                    <div className="flex flex-wrap">
+                        <Button>Twitch</Button>
+                        <Button>Bluesky</Button>
+                        <Button>Bluesky</Button>
+                    </div>
                 </div>
             </div>
         </InCardFragment>

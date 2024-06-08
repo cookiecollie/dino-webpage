@@ -10,7 +10,8 @@ import { PolymorphicProps, PolymorphicRef } from "../../utils"
 interface CustomProps extends HTMLAttributes<HTMLButtonElement> {
     icon?: ReactElement
     iconPosition?: "left" | "right"
-    hasVFX?: boolean
+    variants?: "fill" | "outline" | "ghost"
+    colorScheme?: "primary" | "neutral"
 }
 
 type ButtonProps<C extends ElementType> = PolymorphicProps<C, CustomProps>
@@ -21,7 +22,15 @@ export const Button: <C extends ElementType>(
     props: ButtonProps<C>,
     ref?: PolymorphicRef<C>
 ) {
-    const { children, as, icon, iconPosition, hasVFX = true, ...others } = props
+    const {
+        children,
+        as,
+        icon,
+        iconPosition,
+        variants = "fill",
+        colorScheme = "primary",
+        ...others
+    } = props
     const Component = as || "button"
 
     return (
@@ -30,7 +39,8 @@ export const Button: <C extends ElementType>(
             ref={ref}
             className="dino-button"
             data-icon-position={iconPosition}
-            data-vfx={hasVFX}
+            data-variant={variants}
+            data-color={colorScheme}
         >
             {icon && <span>{icon}</span>}
             <span>{children}</span>

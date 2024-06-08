@@ -6,6 +6,7 @@
 @import "./components/fab/styles.css";
 @import "./components/icon-button/styles.css";
 @import "./components/magnet-group/styles.css";
+@import "./components/navigation/styles.css";
 @import "./components/separator/styles.css";
 @import "./components/tooltip/styles.css";
 
@@ -20,11 +21,20 @@ body,
 #root {
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
-    @apply bg-surface-main h-full font-medium text-default-black;
+    @apply h-full bg-surface-main font-medium text-default-black;
 }
 
 :root {
     --dino-global-transition-duration: 0.2s;
     --dino-global-transition-delay: 0.2s;
     --dino-global-transition-timing-func: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }

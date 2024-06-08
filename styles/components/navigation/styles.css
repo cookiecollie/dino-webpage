@@ -1,0 +1,21 @@
+.dino-navigation {
+    &-wrapper {
+        @apply flex w-full justify-center py-10;
+    }
+
+    &-link {
+        @apply inline-flex h-10 w-full items-center justify-center gap-2 rounded-lg px-4;
+
+        transition: color background-color;
+        transition-duration: var(--dino-global-transition-duration);
+        transition-timing-function: var(--dino-global-transition-timing-func);
+
+        &:is(:hover, :focus-visible) {
+            @apply bg-surface-primary text-default-white;
+        }
+
+        &[data-active="true"]:not(:is(:hover, :focus-visible)) {
+            @apply text-default-primary;
+        }
+    }
+}
