@@ -10,7 +10,12 @@
         "**/src/components/**/*.tsx": "${filename} - Component",
         "**/src/components/**/index.tsx": "${filename} - Component || ${dirname} ||",
         "**/src/stories/**/*.stories.tsx": "${filename} - Story",
-        "**/src/styles/**/styles.css": "${filename} - Style || ${dirname} ||"
+        "**/styles/**/styles.css": "${filename} - Style || ${dirname} ||"
     },
-    "eslint.validate": ["json"]
+    "eslint.validate": ["json"],
+
+    "[css]": {
+        "editor.wordWrap": "wordWrapColumn",
+        "editor.wordWrapColumn": 80
+    }
 }

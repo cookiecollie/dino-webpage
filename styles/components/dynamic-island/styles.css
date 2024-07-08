@@ -1,0 +1,16 @@
+.dino-dynamic-island {
+    @apply absolute top-0 grid h-10 items-center whitespace-nowrap rounded-full bg-surface-primary px-4 text-default-white;
+    transform: translateX(-50%);
+    grid-template-columns:
+        auto calc(var(--dino-dynamic-island-expand, 0) * 240px)
+        auto;
+    transition: 0.8s var(--dino-global-transition-timing-func);
+
+    &-wrapper {
+        @apply relative h-10;
+    }
+
+    &-content {
+        @apply mx-4 overflow-hidden;
+    }
+}
