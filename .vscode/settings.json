@@ -9,8 +9,9 @@
     "workbench.editor.customLabels.patterns": {
         "**/src/components/**/*.tsx": "${filename} - Component",
         "**/src/components/**/index.tsx": "${filename} - Component || ${dirname} ||",
-        "**/src/stories/**/*.stories.tsx": "${filename} - Story",
-        "**/styles/**/styles.css": "${filename} - Style || ${dirname} ||"
+        "**/styles/**/styles.css": "${filename} - Style || ${dirname} ||",
+        "**/styles/fragments/**/styles.css": "${filename} - Style || Fragments - ${dirname} ||",
+        "**/src/fragments/**/*.tsx": "${filename} - Fragment || ${dirname} ||",
     },
     "eslint.validate": ["json"],
 

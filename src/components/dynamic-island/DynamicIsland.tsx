@@ -1,12 +1,23 @@
+import { IconContext } from "@phosphor-icons/react"
 import { useMotionValueEvent, useScroll } from "framer-motion"
-import { CSSProperties, useRef, useState } from "react"
+import {
+    CSSProperties,
+    PropsWithChildren,
+    ReactElement,
+    useRef,
+    useState,
+} from "react"
+import { getCSSVal } from "../../utils"
 
-interface DynamicIslandProps {
-    paddingTop?: number
+interface DynamicIslandProps extends PropsWithChildren {
+    paddingTop?: number | string
+    cta: ReactElement
+    icon?: ReactElement
+    contentWidth?: number | string
 }
 
 export const DynamicIsland = (props: DynamicIslandProps) => {
-    const { paddingTop = 16 } = props
+    const { paddingTop = 16, icon, cta, children, contentWidth = 240 } = props
 
     const wrapperRef = useRef<HTMLDivElement>(null)
 
@@ -27,7 +38,7 @@ export const DynamicIsland = (props: DynamicIslandProps) => {
             className="dino-dynamic-island-wrapper"
             ref={wrapperRef}
             style={{
-                marginBottom: paddingTop,
+                top: `-${getCSSVal(paddingTop)}`,
             }}
         >
             <div
@@ -35,14 +46,26 @@ export const DynamicIsland = (props: DynamicIslandProps) => {
                 style={
                     {
                         "--dino-dynamic-island-expand": islandPinned ? 1 : 0,
+                        "--dino-dynamic-island-width": getCSSVal(contentWidth),
                         position: islandPinned ? "fixed" : "absolute",
-                        top: paddingTop,
+                        top: getCSSVal(paddingTop),
                     } as CSSProperties
                 }
             >
-                <div>Left</div>
-                <div className="dino-dynamic-island-content">Content</div>
-                <div>Right</div>
+                <span>
+                    <IconContext.Provider value={{ size: 18, weight: "bold" }}>
+                        {icon}
+                    </IconContext.Provider>
+                </span>
+                <div
+                    className="dino-dynamic-island-content"
+                    style={{
+                        margin: `0px 2rem 0px ${icon ? "1" : "0"}rem`,
+                    }}
+                >
+                    {children}
+                </div>
+                <div>{cta}</div>
             </div>
         </div>
     )

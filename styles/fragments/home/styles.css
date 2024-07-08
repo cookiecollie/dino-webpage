@@ -1,0 +1,21 @@
+.dino-page-home {
+    &-hero {
+        @apply flex h-[100vh] flex-col items-center justify-center gap-12;
+
+        .section-1 {
+            @apply flex flex-col items-center gap-4;
+
+            .heading {
+                @apply text-[4rem];
+            }
+
+            .subheading {
+                @apply text-3xl;
+            }
+        }
+    }
+
+    &-about {
+        @apply flex h-[100vh] flex-col items-center justify-center;
+    }
+}

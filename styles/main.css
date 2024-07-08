@@ -2,6 +2,8 @@
 
 @import "./components/dynamic-island/styles.css";
 
+@import "./fragments/home/styles.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,7 +13,7 @@ body,
 #root {
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
-    @apply h-full font-medium text-black;
+    @apply h-full scroll-smooth font-medium text-black;
 }
 
 :root {
