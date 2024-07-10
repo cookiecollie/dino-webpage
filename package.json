@@ -26,6 +26,8 @@
         "@typescript-eslint/parser": "^7.11.0",
         "@vitejs/plugin-react": "^4.2.1",
         "autoprefixer": "^10.4.19",
+        "embla-carousel": "^8.1.6",
+        "embla-carousel-react": "^8.1.6",
         "eslint": "8.x",
         "eslint-config-prettier": "^9.1.0",
         "eslint-plugin-prettier": "^5.1.3",

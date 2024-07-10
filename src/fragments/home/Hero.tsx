@@ -22,7 +22,7 @@ export const Hero = () => {
 
             <DynamicIsland cta={<CTA />} paddingTop={32} contentWidth="16rem">
                 <a href="#about">About</a>
-                <a href="#">My arts</a>
+                <a href="#artworks">Artworks</a>
                 <a href="#">Contact</a>
             </DynamicIsland>
         </div>

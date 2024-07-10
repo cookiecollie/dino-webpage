@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
 @import "./components/dynamic-island/styles.css";
+@import "./components/carousel/styles.css";
 
 @import "./fragments/home/styles.css";
 

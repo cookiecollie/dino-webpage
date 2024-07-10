@@ -1,0 +1,38 @@
+.dino-carousel {
+    @apply flex w-full flex-col items-center justify-center gap-8;
+
+    &-wrapper {
+        @apply w-full overflow-hidden;
+    }
+
+    &-container {
+        margin-left: calc(var(--dino-carousel-gap) * -1);
+
+        @apply flex;
+    }
+
+    &-slide {
+        flex: 0 0 100%;
+        min-width: 0;
+        padding-left: var(--dino-carousel-slide-gap);
+        flex-basis: calc(1 / var(--dino-carousel-slide-number) * 100%);
+    }
+
+    &-content {
+        @apply flex items-center justify-center rounded-xl border p-6 shadow;
+
+        transition: 0.4s var(--dino-global-transition-timing-func);
+
+        &[data-active="true"] {
+            scale: var(--dino-carousel-slide-scale);
+        }
+    }
+
+    &-nav-buttons {
+        @apply flex w-full justify-end gap-4 px-36;
+
+        .btn {
+            @apply rounded-full border p-2;
+        }
+    }
+}
