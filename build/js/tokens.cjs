@@ -1,28 +1,28 @@
 /**
  * Do not edit directly
- * Generated on Wed, 10 Jul 2024 00:31:13 GMT
+ * Generated on Wed, 10 Jul 2024 12:50:28 GMT
  */
 
 module.exports = {
-  "color": {
+  "colors": {
     "base": {
       "nikko-blue": {
         "50": {
           "value": "#eef4ff",
-          "filePath": "tokens/color/base.json",
+          "filePath": "tokens/colors/base.json",
           "isSource": true,
           "original": {
             "value": "#eef4ff"
           },
-          "name": "ColorBaseNikkoBlue50",
+          "name": "ColorsBaseNikkoBlue50",
           "attributes": {
-            "category": "color",
+            "category": "colors",
             "type": "base",
             "item": "nikko-blue",
             "subitem": "50"
           },
           "path": [
-            "color",
+            "colors",
             "base",
             "nikko-blue",
             "50"
@@ -30,20 +30,20 @@ module.exports = {
         },
         "100": {
           "value": "#dfebff",
-          "filePath": "tokens/color/base.json",
+          "filePath": "tokens/colors/base.json",
           "isSource": true,
           "original": {
             "value": "#dfebff"
           },
-          "name": "ColorBaseNikkoBlue100",
+          "name": "ColorsBaseNikkoBlue100",
           "attributes": {
-            "category": "color",
+            "category": "colors",
             "type": "base",
             "item": "nikko-blue",
             "subitem": "100"
           },
           "path": [
-            "color",
+            "colors",
             "base",
             "nikko-blue",
             "100"
@@ -51,20 +51,20 @@ module.exports = {
         },
         "200": {
           "value": "#bbd1ff",
-          "filePath": "tokens/color/base.json",
+          "filePath": "tokens/colors/base.json",
           "isSource": true,
           "original": {
             "value": "#bbd1ff"
           },
-          "name": "ColorBaseNikkoBlue200",
+          "name": "ColorsBaseNikkoBlue200",
           "attributes": {
-            "category": "color",
+            "category": "colors",
             "type": "base",
             "item": "nikko-blue",
             "subitem": "200"
           },
           "path": [
-            "color",
+            "colors",
             "base",
             "nikko-blue",
             "200"
@@ -72,20 +72,20 @@ module.exports = {
         },
         "300": {
           "value": "#a3befe",
-          "filePath": "tokens/color/base.json",
+          "filePath": "tokens/colors/base.json",
           "isSource": true,
           "original": {
             "value": "#a3befe"
           },
-          "name": "ColorBaseNikkoBlue300",
+          "name": "ColorsBaseNikkoBlue300",
           "attributes": {
-            "category": "color",
+            "category": "colors",
             "type": "base",
             "item": "nikko-blue",
             "subitem": "300"
           },
           "path": [
-            "color",
+            "colors",
             "base",
             "nikko-blue",
             "300"
@@ -93,20 +93,20 @@ module.exports = {
         },
         "400": {
           "value": "#7f99fa",
-          "filePath": "tokens/color/base.json",
+          "filePath": "tokens/colors/base.json",
           "isSource": true,
           "original": {
             "value": "#7f99fa"
           },
-          "name": "ColorBaseNikkoBlue400",
+          "name": "ColorsBaseNikkoBlue400",
           "attributes": {
-            "category": "color",
+            "category": "colors",
             "type": "base",
             "item": "nikko-blue",
             "subitem": "400"
           },
           "path": [
-            "color",
+            "colors",
             "base",
             "nikko-blue",
             "400"
@@ -114,20 +114,20 @@ module.exports = {
         },
         "500": {
           "value": "#6076f4",
-          "filePath": "tokens/color/base.json",
+          "filePath": "tokens/colors/base.json",
           "isSource": true,
           "original": {
             "value": "#6076f4"
           },
-          "name": "ColorBaseNikkoBlue500",
+          "name": "ColorsBaseNikkoBlue500",
           "attributes": {
-            "category": "color",
+            "category": "colors",
             "type": "base",
             "item": "nikko-blue",
             "subitem": "500"
           },
           "path": [
-            "color",
+            "colors",
             "base",
             "nikko-blue",
             "500"
@@ -135,20 +135,20 @@ module.exports = {
         },
         "600": {
           "value": "#434ee8",
-          "filePath": "tokens/color/base.json",
+          "filePath": "tokens/colors/base.json",
           "isSource": true,
           "original": {
             "value": "#434ee8"
           },
-          "name": "ColorBaseNikkoBlue600",
+          "name": "ColorsBaseNikkoBlue600",
           "attributes": {
-            "category": "color",
+            "category": "colors",
             "type": "base",
             "item": "nikko-blue",
             "subitem": "600"
           },
           "path": [
-            "color",
+            "colors",
             "base",
             "nikko-blue",
             "600"
@@ -156,20 +156,20 @@ module.exports = {
         },
         "700": {
           "value": "#353ccd",
-          "filePath": "tokens/color/base.json",
+          "filePath": "tokens/colors/base.json",
           "isSource": true,
           "original": {
             "value": "#353ccd"
           },
-          "name": "ColorBaseNikkoBlue700",
+          "name": "ColorsBaseNikkoBlue700",
           "attributes": {
-            "category": "color",
+            "category": "colors",
             "type": "base",
             "item": "nikko-blue",
             "subitem": "700"
           },
           "path": [
-            "color",
+            "colors",
             "base",
             "nikko-blue",
             "700"
@@ -177,20 +177,20 @@ module.exports = {
         },
         "800": {
           "value": "#2e36a5",
-          "filePath": "tokens/color/base.json",
+          "filePath": "tokens/colors/base.json",
           "isSource": true,
           "original": {
             "value": "#2e36a5"
           },
-          "name": "ColorBaseNikkoBlue800",
+          "name": "ColorsBaseNikkoBlue800",
           "attributes": {
-            "category": "color",
+            "category": "colors",
             "type": "base",
             "item": "nikko-blue",
             "subitem": "800"
           },
           "path": [
-            "color",
+            "colors",
             "base",
             "nikko-blue",
             "800"
@@ -198,20 +198,20 @@ module.exports = {
         },
         "900": {
           "value": "#2c3383",
-          "filePath": "tokens/color/base.json",
+          "filePath": "tokens/colors/base.json",
           "isSource": true,
           "original": {
             "value": "#2c3383"
           },
-          "name": "ColorBaseNikkoBlue900",
+          "name": "ColorsBaseNikkoBlue900",
           "attributes": {
-            "category": "color",
+            "category": "colors",
             "type": "base",
             "item": "nikko-blue",
             "subitem": "900"
           },
           "path": [
-            "color",
+            "colors",
             "base",
             "nikko-blue",
             "900"
@@ -219,20 +219,20 @@ module.exports = {
         },
         "950": {
           "value": "#1a1d4c",
-          "filePath": "tokens/color/base.json",
+          "filePath": "tokens/colors/base.json",
           "isSource": true,
           "original": {
             "value": "#1a1d4c"
           },
-          "name": "ColorBaseNikkoBlue950",
+          "name": "ColorsBaseNikkoBlue950",
           "attributes": {
-            "category": "color",
+            "category": "colors",
             "type": "base",
             "item": "nikko-blue",
             "subitem": "950"
           },
           "path": [
-            "color",
+            "colors",
             "base",
             "nikko-blue",
             "950"
@@ -242,20 +242,20 @@ module.exports = {
       "shellby-brown": {
         "50": {
           "value": "#faf5f2",
-          "filePath": "tokens/color/base.json",
+          "filePath": "tokens/colors/base.json",
           "isSource": true,
           "original": {
             "value": "#faf5f2"
           },
-          "name": "ColorBaseShellbyBrown50",
+          "name": "ColorsBaseShellbyBrown50",
           "attributes": {
-            "category": "color",
+            "category": "colors",
             "type": "base",
             "item": "shellby-brown",
             "subitem": "50"
           },
           "path": [
-            "color",
+            "colors",
             "base",
             "shellby-brown",
             "50"
@@ -263,20 +263,20 @@ module.exports = {
         },
         "100": {
           "value": "#ede1d6",
-          "filePath": "tokens/color/base.json",
+          "filePath": "tokens/colors/base.json",
           "isSource": true,
           "original": {
             "value": "#ede1d6"
           },
-          "name": "ColorBaseShellbyBrown100",
+          "name": "ColorsBaseShellbyBrown100",
           "attributes": {
-            "category": "color",
+            "category": "colors",
             "type": "base",
             "item": "shellby-brown",
             "subitem": "100"
           },
           "path": [
-            "color",
+            "colors",
             "base",
             "shellby-brown",
             "100"
@@ -284,20 +284,20 @@ module.exports = {
         },
         "200": {
           "value": "#e4d2c4",
-          "filePath": "tokens/color/base.json",
+          "filePath": "tokens/colors/base.json",
           "isSource": true,
           "original": {
             "value": "#e4d2c4"
           },
-          "name": "ColorBaseShellbyBrown200",
+          "name": "ColorsBaseShellbyBrown200",
           "attributes": {
-            "category": "color",
+            "category": "colors",
             "type": "base",
             "item": "shellby-brown",
             "subitem": "200"
           },
           "path": [
-            "color",
+            "colors",
             "base",
             "shellby-brown",
             "200"
@@ -305,20 +305,20 @@ module.exports = {
         },
         "300": {
           "value": "#d3b49e",
-          "filePath": "tokens/color/base.json",
+          "filePath": "tokens/colors/base.json",
           "isSource": true,
           "original": {
             "value": "#d3b49e"
           },
-          "name": "ColorBaseShellbyBrown300",
+          "name": "ColorsBaseShellbyBrown300",
           "attributes": {
-            "category": "color",
+            "category": "colors",
             "type": "base",
             "item": "shellby-brown",
             "subitem": "300"
           },
           "path": [
-            "color",
+            "colors",
             "base",
             "shellby-brown",
             "300"
@@ -326,20 +326,20 @@ module.exports = {
         },
         "400": {
           "value": "#c19176",
-          "filePath": "tokens/color/base.json",
+          "filePath": "tokens/colors/base.json",
           "isSource": true,
           "original": {
             "value": "#c19176"
           },
-          "name": "ColorBaseShellbyBrown400",
+          "name": "ColorsBaseShellbyBrown400",
           "attributes": {
-            "category": "color",
+            "category": "colors",
             "type": "base",
             "item": "shellby-brown",
             "subitem": "400"
           },
           "path": [
-            "color",
+            "colors",
             "base",
             "shellby-brown",
             "400"
@@ -347,20 +347,20 @@ module.exports = {
         },
         "500": {
           "value": "#b4785b",
-          "filePath": "tokens/color/base.json",
+          "filePath": "tokens/colors/base.json",
           "isSource": true,
           "original": {
             "value": "#b4785b"
           },
-          "name": "ColorBaseShellbyBrown500",
+          "name": "ColorsBaseShellbyBrown500",
           "attributes": {
-            "category": "color",
+            "category": "colors",
             "type": "base",
             "item": "shellby-brown",
             "subitem": "500"
           },
           "path": [
-            "color",
+            "colors",
             "base",
             "shellby-brown",
             "500"
@@ -368,20 +368,20 @@ module.exports = {
         },
         "600": {
           "value": "#a66550",
-          "filePath": "tokens/color/base.json",
+          "filePath": "tokens/colors/base.json",
           "isSource": true,
           "original": {
             "value": "#a66550"
           },
-          "name": "ColorBaseShellbyBrown600",
+          "name": "ColorsBaseShellbyBrown600",
           "attributes": {
-            "category": "color",
+            "category": "colors",
             "type": "base",
             "item": "shellby-brown",
             "subitem": "600"
           },
           "path": [
-            "color",
+            "colors",
             "base",
             "shellby-brown",
             "600"
@@ -389,20 +389,20 @@ module.exports = {
         },
         "700": {
           "value": "#8a5144",
-          "filePath": "tokens/color/base.json",
+          "filePath": "tokens/colors/base.json",
           "isSource": true,
           "original": {
             "value": "#8a5144"
           },
-          "name": "ColorBaseShellbyBrown700",
+          "name": "ColorsBaseShellbyBrown700",
           "attributes": {
-            "category": "color",
+            "category": "colors",
             "type": "base",
             "item": "shellby-brown",
             "subitem": "700"
           },
           "path": [
-            "color",
+            "colors",
             "base",
             "shellby-brown",
             "700"
@@ -410,20 +410,20 @@ module.exports = {
         },
         "800": {
           "value": "#71443b",
-          "filePath": "tokens/color/base.json",
+          "filePath": "tokens/colors/base.json",
           "isSource": true,
           "original": {
             "value": "#71443b"
           },
-          "name": "ColorBaseShellbyBrown800",
+          "name": "ColorsBaseShellbyBrown800",
           "attributes": {
-            "category": "color",
+            "category": "colors",
             "type": "base",
             "item": "shellby-brown",
             "subitem": "800"
           },
           "path": [
-            "color",
+            "colors",
             "base",
             "shellby-brown",
             "800"
@@ -431,20 +431,20 @@ module.exports = {
         },
         "900": {
           "value": "#5c3932",
-          "filePath": "tokens/color/base.json",
+          "filePath": "tokens/colors/base.json",
           "isSource": true,
           "original": {
             "value": "#5c3932"
           },
-          "name": "ColorBaseShellbyBrown900",
+          "name": "ColorsBaseShellbyBrown900",
           "attributes": {
-            "category": "color",
+            "category": "colors",
             "type": "base",
             "item": "shellby-brown",
             "subitem": "900"
           },
           "path": [
-            "color",
+            "colors",
             "base",
             "shellby-brown",
             "900"
@@ -452,20 +452,20 @@ module.exports = {
         },
         "950": {
           "value": "#311c19",
-          "filePath": "tokens/color/base.json",
+          "filePath": "tokens/colors/base.json",
           "isSource": true,
           "original": {
             "value": "#311c19"
           },
-          "name": "ColorBaseShellbyBrown950",
+          "name": "ColorsBaseShellbyBrown950",
           "attributes": {
-            "category": "color",
+            "category": "colors",
             "type": "base",
             "item": "shellby-brown",
             "subitem": "950"
           },
           "path": [
-            "color",
+            "colors",
             "base",
             "shellby-brown",
             "950"
@@ -475,20 +475,20 @@ module.exports = {
       "neutral": {
         "50": {
           "value": "#f8f8f8",
-          "filePath": "tokens/color/base.json",
+          "filePath": "tokens/colors/base.json",
           "isSource": true,
           "original": {
             "value": "#f8f8f8"
           },
-          "name": "ColorBaseNeutral50",
+          "name": "ColorsBaseNeutral50",
           "attributes": {
-            "category": "color",
+            "category": "colors",
             "type": "base",
             "item": "neutral",
             "subitem": "50"
           },
           "path": [
-            "color",
+            "colors",
             "base",
             "neutral",
             "50"
@@ -496,20 +496,20 @@ module.exports = {
         },
         "100": {
           "value": "#f2f2f2",
-          "filePath": "tokens/color/base.json",
+          "filePath": "tokens/colors/base.json",
           "isSource": true,
           "original": {
             "value": "#f2f2f2"
           },
-          "name": "ColorBaseNeutral100",
+          "name": "ColorsBaseNeutral100",
           "attributes": {
-            "category": "color",
+            "category": "colors",
             "type": "base",
             "item": "neutral",
             "subitem": "100"
           },
           "path": [
-            "color",
+            "colors",
             "base",
             "neutral",
             "100"
@@ -517,20 +517,20 @@ module.exports = {
         },
         "200": {
           "value": "#dcdcdc",
-          "filePath": "tokens/color/base.json",
+          "filePath": "tokens/colors/base.json",
           "isSource": true,
           "original": {
             "value": "#dcdcdc"
           },
-          "name": "ColorBaseNeutral200",
+          "name": "ColorsBaseNeutral200",
           "attributes": {
-            "category": "color",
+            "category": "colors",
             "type": "base",
             "item": "neutral",
             "subitem": "200"
           },
           "path": [
-            "color",
+            "colors",
             "base",
             "neutral",
             "200"
@@ -538,20 +538,20 @@ module.exports = {
         },
         "300": {
           "value": "#bdbdbd",
-          "filePath": "tokens/color/base.json",
+          "filePath": "tokens/colors/base.json",
           "isSource": true,
           "original": {
             "value": "#bdbdbd"
           },
-          "name": "ColorBaseNeutral300",
+          "name": "ColorsBaseNeutral300",
           "attributes": {
-            "category": "color",
+            "category": "colors",
             "type": "base",
             "item": "neutral",
             "subitem": "300"
           },
           "path": [
-            "color",
+            "colors",
             "base",
             "neutral",
             "300"
@@ -559,20 +559,20 @@ module.exports = {
         },
         "400": {
           "value": "#989898",
-          "filePath": "tokens/color/base.json",
+          "filePath": "tokens/colors/base.json",
           "isSource": true,
           "original": {
             "value": "#989898"
           },
-          "name": "ColorBaseNeutral400",
+          "name": "ColorsBaseNeutral400",
           "attributes": {
-            "category": "color",
+            "category": "colors",
             "type": "base",
             "item": "neutral",
             "subitem": "400"
           },
           "path": [
-            "color",
+            "colors",
             "base",
             "neutral",
             "400"
@@ -580,20 +580,20 @@ module.exports = {
         },
         "500": {
           "value": "#7c7c7c",
-          "filePath": "tokens/color/base.json",
+          "filePath": "tokens/colors/base.json",
           "isSource": true,
           "original": {
             "value": "#7c7c7c"
           },
-          "name": "ColorBaseNeutral500",
+          "name": "ColorsBaseNeutral500",
           "attributes": {
-            "category": "color",
+            "category": "colors",
             "type": "base",
             "item": "neutral",
             "subitem": "500"
           },
           "path": [
-            "color",
+            "colors",
             "base",
             "neutral",
             "500"
@@ -601,20 +601,20 @@ module.exports = {
         },
         "600": {
           "value": "#656565",
-          "filePath": "tokens/color/base.json",
+          "filePath": "tokens/colors/base.json",
           "isSource": true,
           "original": {
             "value": "#656565"
           },
-          "name": "ColorBaseNeutral600",
+          "name": "ColorsBaseNeutral600",
           "attributes": {
-            "category": "color",
+            "category": "colors",
             "type": "base",
             "item": "neutral",
             "subitem": "600"
           },
           "path": [
-            "color",
+            "colors",
             "base",
             "neutral",
             "600"
@@ -622,20 +622,20 @@ module.exports = {
         },
         "700": {
           "value": "#525252",
-          "filePath": "tokens/color/base.json",
+          "filePath": "tokens/colors/base.json",
           "isSource": true,
           "original": {
             "value": "#525252"
           },
-          "name": "ColorBaseNeutral700",
+          "name": "ColorsBaseNeutral700",
           "attributes": {
-            "category": "color",
+            "category": "colors",
             "type": "base",
             "item": "neutral",
             "subitem": "700"
           },
           "path": [
-            "color",
+            "colors",
             "base",
             "neutral",
             "700"
@@ -643,20 +643,20 @@ module.exports = {
         },
         "800": {
           "value": "#464646",
-          "filePath": "tokens/color/base.json",
+          "filePath": "tokens/colors/base.json",
           "isSource": true,
           "original": {
             "value": "#464646"
           },
-          "name": "ColorBaseNeutral800",
+          "name": "ColorsBaseNeutral800",
           "attributes": {
-            "category": "color",
+            "category": "colors",
             "type": "base",
             "item": "neutral",
             "subitem": "800"
           },
           "path": [
-            "color",
+            "colors",
             "base",
             "neutral",
             "800"
@@ -664,20 +664,20 @@ module.exports = {
         },
         "900": {
           "value": "#3d3d3d",
-          "filePath": "tokens/color/base.json",
+          "filePath": "tokens/colors/base.json",
           "isSource": true,
           "original": {
             "value": "#3d3d3d"
           },
-          "name": "ColorBaseNeutral900",
+          "name": "ColorsBaseNeutral900",
           "attributes": {
-            "category": "color",
+            "category": "colors",
             "type": "base",
             "item": "neutral",
             "subitem": "900"
           },
           "path": [
-            "color",
+            "colors",
             "base",
             "neutral",
             "900"
@@ -685,20 +685,20 @@ module.exports = {
         },
         "950": {
           "value": "#2e2e2e",
-          "filePath": "tokens/color/base.json",
+          "filePath": "tokens/colors/base.json",
           "isSource": true,
           "original": {
             "value": "#2e2e2e"
           },
-          "name": "ColorBaseNeutral950",
+          "name": "ColorsBaseNeutral950",
           "attributes": {
-            "category": "color",
+            "category": "colors",
             "type": "base",
             "item": "neutral",
             "subitem": "950"
           },
           "path": [
-            "color",
+            "colors",
             "base",
             "neutral",
             "950"
@@ -708,20 +708,20 @@ module.exports = {
       "default": {
         "white": {
           "value": "#f2f2f2",
-          "filePath": "tokens/color/base.json",
+          "filePath": "tokens/colors/base.json",
           "isSource": true,
           "original": {
-            "value": "{color.base.neutral.100}"
+            "value": "{colors.base.neutral.100}"
           },
-          "name": "ColorBaseDefaultWhite",
+          "name": "ColorsBaseDefaultWhite",
           "attributes": {
-            "category": "color",
+            "category": "colors",
             "type": "base",
             "item": "default",
             "subitem": "white"
           },
           "path": [
-            "color",
+            "colors",
             "base",
             "default",
             "white"
@@ -729,20 +729,20 @@ module.exports = {
         },
         "black": {
           "value": "#2e2e2e",
-          "filePath": "tokens/color/base.json",
+          "filePath": "tokens/colors/base.json",
           "isSource": true,
           "original": {
-            "value": "{color.base.neutral.950}"
+            "value": "{colors.base.neutral.950}"
           },
-          "name": "ColorBaseDefaultBlack",
+          "name": "ColorsBaseDefaultBlack",
           "attributes": {
-            "category": "color",
+            "category": "colors",
             "type": "base",
             "item": "default",
             "subitem": "black"
           },
           "path": [
-            "color",
+            "colors",
             "base",
             "default",
             "black"
@@ -750,20 +750,20 @@ module.exports = {
         },
         "primary": {
           "value": "#7f99fa",
-          "filePath": "tokens/color/base.json",
+          "filePath": "tokens/colors/base.json",
           "isSource": true,
           "original": {
-            "value": "{color.base.nikko-blue.400}"
+            "value": "{colors.base.nikko-blue.400}"
           },
-          "name": "ColorBaseDefaultPrimary",
+          "name": "ColorsBaseDefaultPrimary",
           "attributes": {
-            "category": "color",
+            "category": "colors",
             "type": "base",
             "item": "default",
             "subitem": "primary"
           },
           "path": [
-            "color",
+            "colors",
             "base",
             "default",
             "primary"
@@ -773,20 +773,20 @@ module.exports = {
       "surface": {
         "primary": {
           "value": "#7f99fa",
-          "filePath": "tokens/color/base.json",
+          "filePath": "tokens/colors/base.json",
           "isSource": true,
           "original": {
-            "value": "{color.base.default.primary}"
+            "value": "{colors.base.default.primary}"
           },
-          "name": "ColorBaseSurfacePrimary",
+          "name": "ColorsBaseSurfacePrimary",
           "attributes": {
-            "category": "color",
+            "category": "colors",
             "type": "base",
             "item": "surface",
             "subitem": "primary"
           },
           "path": [
-            "color",
+            "colors",
             "base",
             "surface",
             "primary"

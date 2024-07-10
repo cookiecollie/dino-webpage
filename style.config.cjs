@@ -44,9 +44,7 @@ StyleDictionary.registerFormat({
         dictionary.allTokens.forEach(({ path, value, attributes }) => {
             const joinedPath = path.slice(2).join("-")
 
-            tokens[attributes.category][
-                `${attributes.category === "size" ? "dino-" : ""}${joinedPath}`
-            ] = value
+            tokens[attributes.category][joinedPath] = value
         })
 
         return JSON.stringify(tokens)
