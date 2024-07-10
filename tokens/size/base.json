@@ -1,0 +1,15 @@
+{
+    "size": {
+        "font": {
+            "h1": { "value": "3.815rem" },
+            "h2": { "value": "3.052rem" },
+            "h3": { "value": "2.441rem" },
+            "h4": { "value": "1.953rem" },
+            "h5": { "value": "1.563rem" },
+            "h6": { "value": "1.25rem" },
+            "base": { "value": "1rem" },
+            "sm": { "value": "0.8rem" },
+            "xs": { "value": "0.64rem" }
+        }
+    }
+}

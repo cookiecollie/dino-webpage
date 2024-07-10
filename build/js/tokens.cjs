@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 13 Jun 2024 13:50:48 GMT
+ * Generated on Wed, 10 Jul 2024 00:31:13 GMT
  */
 
 module.exports = {
@@ -792,6 +792,181 @@ module.exports = {
             "primary"
           ]
         }
+      }
+    }
+  },
+  "size": {
+    "font": {
+      "h1": {
+        "value": "3.815rem",
+        "filePath": "tokens/size/base.json",
+        "isSource": true,
+        "original": {
+          "value": "3.815rem"
+        },
+        "name": "SizeFontH1",
+        "attributes": {
+          "category": "size",
+          "type": "font",
+          "item": "h1"
+        },
+        "path": [
+          "size",
+          "font",
+          "h1"
+        ]
+      },
+      "h2": {
+        "value": "3.052rem",
+        "filePath": "tokens/size/base.json",
+        "isSource": true,
+        "original": {
+          "value": "3.052rem"
+        },
+        "name": "SizeFontH2",
+        "attributes": {
+          "category": "size",
+          "type": "font",
+          "item": "h2"
+        },
+        "path": [
+          "size",
+          "font",
+          "h2"
+        ]
+      },
+      "h3": {
+        "value": "2.441rem",
+        "filePath": "tokens/size/base.json",
+        "isSource": true,
+        "original": {
+          "value": "2.441rem"
+        },
+        "name": "SizeFontH3",
+        "attributes": {
+          "category": "size",
+          "type": "font",
+          "item": "h3"
+        },
+        "path": [
+          "size",
+          "font",
+          "h3"
+        ]
+      },
+      "h4": {
+        "value": "1.953rem",
+        "filePath": "tokens/size/base.json",
+        "isSource": true,
+        "original": {
+          "value": "1.953rem"
+        },
+        "name": "SizeFontH4",
+        "attributes": {
+          "category": "size",
+          "type": "font",
+          "item": "h4"
+        },
+        "path": [
+          "size",
+          "font",
+          "h4"
+        ]
+      },
+      "h5": {
+        "value": "1.563rem",
+        "filePath": "tokens/size/base.json",
+        "isSource": true,
+        "original": {
+          "value": "1.563rem"
+        },
+        "name": "SizeFontH5",
+        "attributes": {
+          "category": "size",
+          "type": "font",
+          "item": "h5"
+        },
+        "path": [
+          "size",
+          "font",
+          "h5"
+        ]
+      },
+      "h6": {
+        "value": "1.25rem",
+        "filePath": "tokens/size/base.json",
+        "isSource": true,
+        "original": {
+          "value": "1.25rem"
+        },
+        "name": "SizeFontH6",
+        "attributes": {
+          "category": "size",
+          "type": "font",
+          "item": "h6"
+        },
+        "path": [
+          "size",
+          "font",
+          "h6"
+        ]
+      },
+      "base": {
+        "value": "1rem",
+        "filePath": "tokens/size/base.json",
+        "isSource": true,
+        "original": {
+          "value": "1rem"
+        },
+        "name": "SizeFontBase",
+        "attributes": {
+          "category": "size",
+          "type": "font",
+          "item": "base"
+        },
+        "path": [
+          "size",
+          "font",
+          "base"
+        ]
+      },
+      "sm": {
+        "value": "0.8rem",
+        "filePath": "tokens/size/base.json",
+        "isSource": true,
+        "original": {
+          "value": "0.8rem"
+        },
+        "name": "SizeFontSm",
+        "attributes": {
+          "category": "size",
+          "type": "font",
+          "item": "sm"
+        },
+        "path": [
+          "size",
+          "font",
+          "sm"
+        ]
+      },
+      "xs": {
+        "value": "0.64rem",
+        "filePath": "tokens/size/base.json",
+        "isSource": true,
+        "original": {
+          "value": "0.64rem"
+        },
+        "name": "SizeFontXs",
+        "attributes": {
+          "category": "size",
+          "type": "font",
+          "item": "xs"
+        },
+        "path": [
+          "size",
+          "font",
+          "xs"
+        ]
       }
     }
   }

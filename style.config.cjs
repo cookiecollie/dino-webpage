@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+const StyleDictionary = require("style-dictionary")
+
 module.exports = {
     source: ["tokens/**/*.json"],
     platforms: {
@@ -11,5 +14,41 @@ module.exports = {
                 },
             ],
         },
+
+        "tailwind-json": {
+            transformGroup: "js",
+            buildPath: "build/tailwind/",
+            files: [
+                {
+                    destination: "tokens.json",
+                    format: "tailwind-custom",
+                },
+            ],
+        },
     },
 }
+
+StyleDictionary.registerFormat({
+    name: "tailwind-custom",
+    formatter: ({ dictionary }) => {
+        const categories = [
+            ...new Set(
+                dictionary.allTokens.map(({ attributes }) => {
+                    return attributes.category
+                })
+            ),
+        ]
+
+        const tokens = Object.fromEntries(categories.map((cat) => [cat, {}]))
+
+        dictionary.allTokens.forEach(({ path, value, attributes }) => {
+            const joinedPath = path.slice(2).join("-")
+
+            tokens[attributes.category][
+                `${attributes.category === "size" ? "dino-" : ""}${joinedPath}`
+            ] = value
+        })
+
+        return JSON.stringify(tokens)
+    },
+})

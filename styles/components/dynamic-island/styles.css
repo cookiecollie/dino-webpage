@@ -18,8 +18,7 @@
         @apply flex justify-between overflow-hidden;
 
         a {
-            transition: 0.4s
-                var(--dino-global-transition-timing-func);
+            transition: 0.4s var(--dino-global-transition-timing-func);
         }
     }
 
