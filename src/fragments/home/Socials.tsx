@@ -1,6 +1,10 @@
 import { AspectRatio } from "../../components/aspect-ratio"
-import { Avatar, AvatarFallback, AvatarImage } from "../../components/avatar"
 import { SocialCard } from "../../components/social-card"
+import {
+    SocialCardContent,
+    SocialCardInfo,
+    SocialCardLinkButton,
+} from "../../components/social-card/SocialCard"
 
 const TwitchMessage = (props: { message: string }) => {
     const { message } = props
@@ -32,43 +36,65 @@ export const Socials = () => {
                     <SocialCard>
                         <AspectRatio ratio={1}>
                             <div className="flex h-full flex-col gap-6">
-                                <div className="flex items-center gap-4">
-                                    <Avatar>
-                                        <AvatarImage src="./public/resources/img/TwitchAvatar.png" />
-                                        <AvatarFallback>CC</AvatarFallback>
-                                    </Avatar>
+                                <SocialCardInfo
+                                    displayName="CookieCollie"
+                                    pfpSrc="./public/resources/img/TwitchAvatar.png"
+                                    pfpFallback="CC"
+                                />
 
-                                    <p className="font-bold">CookieCollie</p>
-                                </div>
+                                <SocialCardContent>
+                                    <div className="flex h-full w-[120%] flex-col shadow-md">
+                                        <div className="flex-1">
+                                            <TwitchMessage message="Hey there!" />
+                                            <TwitchMessage message="You're cool! :D" />
+                                        </div>
 
-                                <div className="flex w-[120%] flex-1 flex-col shadow-md">
-                                    <div className="flex-1">
-                                        <TwitchMessage message="Hey there!" />
-                                        <TwitchMessage message="You're cool! :D" />
+                                        <div className="m-4 mt-0 flex h-10 gap-4 rounded-lg border border-[rgba(0,0,0,.7)] p-2">
+                                            <span className="aspect-square h-full">
+                                                <img src="./public/resources/svg/TwitchNoSub-Light.svg" />
+                                            </span>
+
+                                            <input
+                                                className="w-full bg-transparent text-[0.9rem] focus:outline-none"
+                                                placeholder="Send a message"
+                                                disabled
+                                            />
+                                        </div>
                                     </div>
+                                </SocialCardContent>
 
-                                    <div className="m-4 mt-0 flex h-10 gap-4 rounded-lg border border-[rgba(0,0,0,.7)] p-2">
-                                        <span className="aspect-square h-full">
-                                            <img src="./public/resources/svg/TwitchNoSub-Light.svg" />
-                                        </span>
-
-                                        <input
-                                            className="w-full bg-transparent text-[0.9rem] focus:outline-none"
-                                            placeholder="Send a message"
-                                            disabled
-                                        />
-                                    </div>
-                                </div>
-
-                                <div className="flex h-10 w-full items-center justify-center rounded-full border">
+                                <SocialCardLinkButton>
                                     Visit My Twitch
-                                </div>
+                                </SocialCardLinkButton>
                             </div>
                         </AspectRatio>
                     </SocialCard>
 
                     <SocialCard>
-                        <AspectRatio ratio={1}>Bluesky</AspectRatio>
+                        <AspectRatio ratio={1}>
+                            <div className="flex h-full flex-col gap-6">
+                                <SocialCardInfo
+                                    displayName="⭐ Nikko ⭐"
+                                    pfpSrc="./public/resources/img/BlueskyAvatar.jpg"
+                                    pfpFallback="NS"
+                                    username="@nikko-scribblo.bsky.social"
+                                />
+
+                                <SocialCardContent>
+                                    <div className="flex flex-col gap-2 text-h5">
+                                        <p>Catch me up on Bluesky!</p>
+                                        <p>Artworks and what not!</p>
+                                        <p className="text-default-primary">
+                                            #yourecute
+                                        </p>
+                                    </div>
+                                </SocialCardContent>
+
+                                <SocialCardLinkButton>
+                                    Visit My Bluesky
+                                </SocialCardLinkButton>
+                            </div>
+                        </AspectRatio>
                     </SocialCard>
                 </div>
             </div>
