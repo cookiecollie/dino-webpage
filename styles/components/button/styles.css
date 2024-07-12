@@ -1,0 +1,3 @@
+.dino-button {
+    @apply h-10 rounded-full border px-10;
+}

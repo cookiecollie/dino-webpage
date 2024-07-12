@@ -1,0 +1,7 @@
+.dino-avatar {
+    @apply inline-flex aspect-square w-12 items-center justify-center overflow-hidden rounded-full text-default-white;
+
+    &-fallback {
+        @apply select-none bg-default-primary;
+    }
+}

@@ -2,6 +2,9 @@
 
 @import "./components/dynamic-island/styles.css";
 @import "./components/carousel/styles.css";
+@import "./components/button/styles.css";
+@import "./components/social-card/styles.css";
+@import "./components/avatar/styles.css";
 
 @import "./fragments/home/styles.css";
 

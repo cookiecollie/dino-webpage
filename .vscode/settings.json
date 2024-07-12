@@ -11,12 +11,13 @@
         "**/src/components/**/index.tsx": "${filename} - Component || ${dirname} ||",
         "**/styles/**/styles.css": "${filename} - Style || ${dirname} ||",
         "**/styles/fragments/**/styles.css": "${filename} - Style || Fragments - ${dirname} ||",
-        "**/src/fragments/**/*.tsx": "${filename} - Fragment || ${dirname} ||",
+        "**/src/fragments/**/*.tsx": "${filename} - Fragment || ${dirname} ||"
     },
     "eslint.validate": ["json"],
 
     "[css]": {
         "editor.wordWrap": "wordWrapColumn",
         "editor.wordWrapColumn": 80
-    }
+    },
+    "svg.preview.background": "editor"
 }

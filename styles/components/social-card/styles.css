@@ -1,0 +1,3 @@
+.dino-social-card {
+    @apply w-full rounded-xl border p-6 overflow-hidden;
+}

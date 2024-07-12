@@ -1,3 +1,4 @@
+import { AspectRatio } from "@radix-ui/react-aspect-ratio"
 import {
     Carousel,
     Content,
@@ -17,21 +18,26 @@ export const Artworks = () => {
                         slidesNumber={4}
                         loop
                         slidesGap={"1rem"}
-                        scale={1.2}
+                        scale={1.1}
                     >
-                        <NavigationButtons
-                            nextCallback={() => {}}
-                            prevCallback={() => {}}
-                        />
+                        <NavigationButtons />
 
                         <Content>
                             <Slide>
-                                <div className="aspect-square w-full">1</div>
+                                <AspectRatio ratio={1}>1</AspectRatio>
                             </Slide>
-                            <Slide>2</Slide>
-                            <Slide>3</Slide>
-                            <Slide>4</Slide>
-                            <Slide>5</Slide>
+                            <Slide>
+                                <AspectRatio ratio={1}>2</AspectRatio>
+                            </Slide>
+                            <Slide>
+                                <AspectRatio ratio={1}>3</AspectRatio>
+                            </Slide>
+                            <Slide>
+                                <AspectRatio ratio={1}>4</AspectRatio>
+                            </Slide>
+                            <Slide>
+                                <AspectRatio ratio={1}>5</AspectRatio>
+                            </Slide>
                         </Content>
                     </Carousel>
                 </div>

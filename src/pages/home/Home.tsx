@@ -1,4 +1,4 @@
-import { About, Artworks, Hero } from "../../fragments"
+import { About, Artworks, Hero, Socials } from "../../fragments"
 
 export const Home = () => {
     return (
@@ -6,6 +6,7 @@ export const Home = () => {
             <Hero />
             <About />
             <Artworks />
+            <Socials />
         </div>
     )
 }

@@ -6,7 +6,7 @@ export const About = () => {
                 <div className="col-span-3 flex flex-col gap-12 px-8">
                     <h2>About</h2>
 
-                    <div className="text-h5 flex flex-col gap-8">
+                    <div className="flex flex-col gap-8 text-h5">
                         <p>
                             Hey, welcome to my little site! I&apos;m Nikko, a
                             self-employed artist who draws cute furry critters,
@@ -26,7 +26,7 @@ export const About = () => {
                     </div>
                 </div>
 
-                <div className="col-span-2 col-end-6 flex items-center px-8">
+                <div className="col-span-2 flex items-center px-8">
                     <div className="aspect-[3/4] w-full bg-surface-primary" />
                 </div>
             </div>
