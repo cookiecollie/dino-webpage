@@ -1,10 +1,16 @@
-import { HTMLAttributes, PropsWithChildren } from "react"
+import { AnchorHTMLAttributes, PropsWithChildren } from "react"
 import { Avatar, AvatarFallback, AvatarImage } from "../avatar"
 
-interface SocialCardProps extends HTMLAttributes<HTMLDivElement> {}
+interface SocialCardProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
+    noHoverFx?: boolean
+}
 
 export const SocialCard = (props: SocialCardProps) => {
-    return <div {...props} className="dino-social-card" />
+    const { noHoverFx = false, ...others } = props
+
+    return (
+        <a {...others} className="dino-social-card" data-no-hover={noHoverFx} />
+    )
 }
 
 interface SocialCardInfoProps {
@@ -17,7 +23,7 @@ export const SocialCardInfo = (props: SocialCardInfoProps) => {
     const { displayName, pfpFallback, pfpSrc, username } = props
 
     return (
-        <div className="flex items-center gap-4">
+        <div className="dino-social-card-info">
             {pfpSrc && (
                 <Avatar>
                     <AvatarImage src={pfpSrc} />
@@ -26,10 +32,8 @@ export const SocialCardInfo = (props: SocialCardInfoProps) => {
             )}
 
             <div>
-                {displayName && <p className="font-bold">{displayName}</p>}
-                {username && (
-                    <p className="text-sm text-neutral-500">{username}</p>
-                )}
+                {displayName && <p className="displayName">{displayName}</p>}
+                {username && <p className="userName">{username}</p>}
             </div>
         </div>
     )
@@ -38,15 +42,11 @@ export const SocialCardInfo = (props: SocialCardInfoProps) => {
 interface SocialCardContentProps extends PropsWithChildren {}
 export const SocialCardContent = (props: SocialCardContentProps) => {
     const { children } = props
-    return <div className="flex-1">{children}</div>
+    return <div className="dino-social-card-content">{children}</div>
 }
 
 interface SocialCardLinkButtonProps extends PropsWithChildren {}
 export const SocialCardLinkButton = (props: SocialCardLinkButtonProps) => {
     const { children } = props
-    return (
-        <div className="flex min-h-10 w-full items-center justify-center rounded-full border">
-            {children}
-        </div>
-    )
+    return <div className="dino-social-card-link-button">{children}</div>
 }

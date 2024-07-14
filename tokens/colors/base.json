@@ -47,11 +47,12 @@
                 "white": { "value": "{colors.base.neutral.100}" },
                 "black": { "value": "{colors.base.neutral.950}" },
                 "primary": { "value": "{colors.base.nikko-blue.400}" }
-            },
-
-            "surface": {
-                "primary": { "value": "{colors.base.default.primary}" }
             }
+        },
+
+        "surface": {
+            "primary": { "value": "{colors.base.default.primary}" },
+            "white": { "value": "{colors.base.neutral.50}" }
         }
     }
 }

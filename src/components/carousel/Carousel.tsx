@@ -41,14 +41,16 @@ export const Carousel = (props: CarouselProps) => {
 
     const [emblaRef, emblaAPI] = useEmblaCarousel({ loop, inViewThreshold: 1 })
 
-    const handleIndexMatch = useCallback((emblaAPI: EmblaCarouselType) => {
-        console.log(emblaAPI.selectedScrollSnap())
+    const handleCurrentIndex = useCallback((emblaAPI: EmblaCarouselType) => {
         setCurrentIndex(emblaAPI.selectedScrollSnap())
     }, [])
 
     useEffect(() => {
-        if (emblaAPI) emblaAPI.on("select", handleIndexMatch)
-    }, [emblaAPI, handleIndexMatch])
+        if (emblaAPI) {
+            emblaAPI.on("select", handleCurrentIndex)
+            emblaAPI.on("init", handleCurrentIndex)
+        }
+    }, [emblaAPI, handleCurrentIndex])
 
     return (
         <div

@@ -9,8 +9,8 @@ import {
 export const Artworks = () => {
     return (
         <>
-            <span id="artworks" />
-            <div className="flex w-full flex-col items-center gap-16 py-36">
+            <div id="artworks" />
+            <div className="mt-24 flex w-full flex-col items-center gap-16 pb-36">
                 <h1>Artworks</h1>
 
                 <div className="flex w-full flex-col gap-8">

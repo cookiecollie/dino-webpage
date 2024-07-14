@@ -42,7 +42,10 @@ StyleDictionary.registerFormat({
         const tokens = Object.fromEntries(categories.map((cat) => [cat, {}]))
 
         dictionary.allTokens.forEach(({ path, value, attributes }) => {
-            const joinedPath = path.slice(2).join("-")
+            const categoryRemoved = path.slice(1)
+            const joinedPath = ["base", "font"].includes(categoryRemoved[0])
+                ? categoryRemoved.slice(1).join("-")
+                : categoryRemoved.join("-")
 
             tokens[attributes.category][joinedPath] = value
         })

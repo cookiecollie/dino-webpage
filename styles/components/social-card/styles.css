@@ -1,3 +1,34 @@
 .dino-social-card {
-    @apply w-full rounded-xl border p-6 overflow-hidden;
+    --dino-social-card-translate: -8px;
+
+    @apply w-full select-none overflow-hidden rounded-xl bg-gray-100/60 p-6;
+
+    transition: var(--dino-global-transition-duration)
+        var(--dino-global-transition-timing-func);
+
+    &[data-no-hover="false"]:hover {
+        @apply shadow-lg;
+
+        transform: translateX(var(--dino-social-card-translate))
+            translateY(var(--dino-social-card-translate));
+    }
+
+    &-info {
+        @apply flex items-center gap-4;
+
+        .displayName {
+            @apply font-bold;
+        }
+        .userName {
+            @apply text-sm text-neutral-500;
+        }
+    }
+
+    &-content {
+        @apply flex-1;
+    }
+
+    &-link-button {
+        @apply flex min-h-10 w-full items-center justify-center rounded-full border-2;
+    }
 }

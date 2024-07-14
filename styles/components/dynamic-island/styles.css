@@ -1,5 +1,5 @@
 .dino-dynamic-island {
-    @apply absolute top-0 grid h-10 items-center whitespace-nowrap rounded-full bg-surface-primary px-4 text-default-white z-[9999];
+    @apply absolute top-0 z-[9999] grid h-10 items-center whitespace-nowrap rounded-full border bg-surface-white px-4 font-bold text-default-black shadow-md;
     transform: translateX(-50%);
     grid-template-columns:
         auto

@@ -16,14 +16,17 @@ export const Hero = () => {
     return (
         <div className="dino-page-home-hero">
             <div className="section-1">
-                <h1 className="heading">Hi there, I&apos;m Nikko!</h1>
+                <h1 className="heading">
+                    Hi there, I&apos;m{" "}
+                    <span className="text-default-primary">Nikko!</span>
+                </h1>
                 <p className="subheading">Fancy seeing you here!</p>
             </div>
 
             <DynamicIsland cta={<CTA />} paddingTop={32} contentWidth="16rem">
                 <a href="#about">About</a>
                 <a href="#artworks">Artworks</a>
-                <a href="#">Contact</a>
+                <a href="#socials">Socials</a>
             </DynamicIsland>
         </div>
     )

@@ -2,7 +2,7 @@ export const About = () => {
     return (
         <>
             <span className="h-0" id="about" />
-            <div className="grid grid-cols-5 px-64 py-36">
+            <div className="mt-36 grid grid-cols-5 px-64 pb-36">
                 <div className="col-span-3 flex flex-col gap-12 px-8">
                     <h2>About</h2>
 

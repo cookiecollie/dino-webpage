@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 10 Jul 2024 12:50:28 GMT
+ * Generated on Fri, 12 Jul 2024 09:38:23 GMT
  */
 
 module.exports = {
@@ -769,29 +769,46 @@ module.exports = {
             "primary"
           ]
         }
+      }
+    },
+    "surface": {
+      "primary": {
+        "value": "#7f99fa",
+        "filePath": "tokens/colors/base.json",
+        "isSource": true,
+        "original": {
+          "value": "{colors.base.default.primary}"
+        },
+        "name": "ColorsSurfacePrimary",
+        "attributes": {
+          "category": "colors",
+          "type": "surface",
+          "item": "primary"
+        },
+        "path": [
+          "colors",
+          "surface",
+          "primary"
+        ]
       },
-      "surface": {
-        "primary": {
-          "value": "#7f99fa",
-          "filePath": "tokens/colors/base.json",
-          "isSource": true,
-          "original": {
-            "value": "{colors.base.default.primary}"
-          },
-          "name": "ColorsBaseSurfacePrimary",
-          "attributes": {
-            "category": "colors",
-            "type": "base",
-            "item": "surface",
-            "subitem": "primary"
-          },
-          "path": [
-            "colors",
-            "base",
-            "surface",
-            "primary"
-          ]
-        }
+      "white": {
+        "value": "#f8f8f8",
+        "filePath": "tokens/colors/base.json",
+        "isSource": true,
+        "original": {
+          "value": "{colors.base.neutral.50}"
+        },
+        "name": "ColorsSurfaceWhite",
+        "attributes": {
+          "category": "colors",
+          "type": "surface",
+          "item": "white"
+        },
+        "path": [
+          "colors",
+          "surface",
+          "white"
+        ]
       }
     }
   },
