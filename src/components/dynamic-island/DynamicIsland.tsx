@@ -14,10 +14,20 @@ interface DynamicIslandProps extends PropsWithChildren {
     cta: ReactElement
     icon?: ReactElement
     contentWidth?: number | string
+    onFixed?: () => void
+    onUnfixed?: () => void
 }
 
 export const DynamicIsland = (props: DynamicIslandProps) => {
-    const { paddingTop = 16, icon, cta, children, contentWidth = 240 } = props
+    const {
+        paddingTop = 16,
+        icon,
+        cta,
+        children,
+        contentWidth = 240,
+        onFixed,
+        onUnfixed,
+    } = props
 
     const wrapperRef = useRef<HTMLDivElement>(null)
 
@@ -30,7 +40,13 @@ export const DynamicIsland = (props: DynamicIslandProps) => {
 
     useMotionValueEvent(scrollYProgress, "change", (latest) => {
         const progress = Math.floor(latest)
-        progress ? setIslandPinned(true) : setIslandPinned(false)
+        if (progress) {
+            setIslandPinned(true)
+            onFixed !== undefined ? onFixed() : null
+        } else {
+            setIslandPinned(false)
+            onUnfixed !== undefined ? onUnfixed() : null
+        }
     })
 
     return (
