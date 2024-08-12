@@ -1,3 +1,4 @@
+import { Footer } from "../../components/footer"
 import { About, Artworks, Hero, Socials } from "../../fragments"
 
 export const Home = () => {
@@ -7,6 +8,7 @@ export const Home = () => {
             <About />
             <Artworks />
             <Socials />
+            <Footer />
         </div>
     )
 }

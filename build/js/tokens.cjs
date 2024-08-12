@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 12 Jul 2024 09:38:23 GMT
+ * Generated on Sat, 10 Aug 2024 12:32:29 GMT
  */
 
 module.exports = {
@@ -808,6 +808,25 @@ module.exports = {
           "colors",
           "surface",
           "white"
+        ]
+      },
+      "border": {
+        "value": "#dcdcdc",
+        "filePath": "tokens/colors/base.json",
+        "isSource": true,
+        "original": {
+          "value": "{colors.base.neutral.200}"
+        },
+        "name": "ColorsSurfaceBorder",
+        "attributes": {
+          "category": "colors",
+          "type": "surface",
+          "item": "border"
+        },
+        "path": [
+          "colors",
+          "surface",
+          "border"
         ]
       }
     }

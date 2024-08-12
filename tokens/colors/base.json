@@ -52,7 +52,8 @@
 
         "surface": {
             "primary": { "value": "{colors.base.default.primary}" },
-            "white": { "value": "{colors.base.neutral.50}" }
+            "white": { "value": "{colors.base.neutral.50}" },
+            "border": { "value": "{colors.base.neutral.200}" }
         }
     }
 }

@@ -1,0 +1,7 @@
+.dino-footer {
+    @apply flex h-28 items-center justify-between text-sm text-neutral-400;
+
+    &-icons {
+        @apply flex gap-6;
+    }
+}
