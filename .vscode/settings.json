@@ -7,10 +7,9 @@
     },
     "editor.wordWrap": "on",
     "workbench.editor.customLabels.patterns": {
-        "**/src/components/**/*.tsx": "${filename} - Component",
-        "**/src/components/**/index.tsx": "${filename} - Component || ${dirname} ||",
-        "**/src/stories/**/*.stories.tsx": "${filename} - Story",
-        "**/src/styles/**/styles.css": "${filename} - Style || ${dirname} ||"
+        "**/src/components/**/*.tsx": "Component - ${filename}",
+        "**/src/components/**/index.tsx": "Index - Component \"${dirname}\"",
+        "**/src/styles/**/styles.css": "Style - ${dirname}"
     },
     "eslint.validate": ["json"]
 }
