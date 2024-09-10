@@ -26,8 +26,11 @@ export const About = () => {
                     </div>
                 </div>
 
-                <div className="col-span-2 flex items-center px-8">
-                    <div className="aspect-[3/4] w-full bg-surface-primary" />
+                <div className="col-span-2 flex">
+                    <img
+                        src="/resources/webp/about-nikko.webp"
+                        className="w-full object-contain"
+                    />
                 </div>
             </div>
         </>

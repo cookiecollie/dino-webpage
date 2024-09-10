@@ -3,5 +3,13 @@
 
     &-icons {
         @apply flex gap-6;
+
+        a {
+            transition: 0.4s var(--dino-global-transition-timing-func);
+        }
+    }
+
+    &-icons:has(a:hover) a:not(:hover) {
+        opacity: 0.5;
     }
 }
