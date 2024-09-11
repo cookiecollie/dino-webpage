@@ -1,0 +1,22 @@
+{
+    "typography": {
+        "size": {
+            "xs": { "value": "0.563rem" },
+            "sm": { "value": "0.75rem" },
+            "md": { "value": "1rem" },
+            "lg": { "value": "1.333rem" },
+            "xl": { "value": "1.777rem" },
+            "2xl": { "value": "2.369rem" },
+            "3xl": { "value": "3.157rem" },
+            "4xl": { "value": "4.209rem" },
+            "5xl": { "value": "5.61rem" },
+
+            "h1": { "value": "{typography.size.5xl}" },
+            "h2": { "value": "{typography.size.4xl}" },
+            "h3": { "value": "{typography.size.3xl}" },
+            "h4": { "value": "{typography.size.2xl}" },
+            "h5": { "value": "{typography.size.xl}" },
+            "h6": { "value": "{typography.size.lg}" }
+        }
+    }
+}
