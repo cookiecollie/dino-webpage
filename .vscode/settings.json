@@ -8,8 +8,8 @@
     "editor.wordWrap": "on",
     "workbench.editor.customLabels.patterns": {
         "**/src/components/**/*.tsx": "Component - ${filename}",
-        "**/src/components/**/index.tsx": "Index - Component \"${dirname}\"",
-        "**/src/styles/**/styles.css": "Style - ${dirname}"
+        "**/src/components/**/index.ts": "Index - Component \"${dirname}\"",
+        "**/styles/**/styles.css": "Style - ${dirname}"
     },
     "eslint.validate": ["json"]
 }

@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
+@import "./icon-group/styles.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,5 +11,41 @@ body,
 #root {
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
-    @apply h-full text-black font-medium;
+    font-size: 20px;
+    @apply h-full font-medium text-shellby-brown-900;
+}
+
+:root {
+    --dino-global-transition-duration: 0.2s;
+    --dino-global-transition-delay: 0.2s;
+    --dino-global-transition-timing-func: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@layer base {
+    h1 {
+        @apply text-h1;
+    }
+    h2 {
+        @apply text-h2;
+    }
+    h3 {
+        @apply text-h3;
+    }
+    h4 {
+        @apply text-h4;
+    }
+    h5 {
+        @apply text-h5;
+    }
+    h6 {
+        @apply text-h6;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-bold;
+    }
 }
