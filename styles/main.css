@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
 @import "./icon-group/styles.css";
+@import "./tooltip/styles.css";
 
 @tailwind base;
 @tailwind components;

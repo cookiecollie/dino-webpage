@@ -1,12 +1,12 @@
 .dino-icon-group {
     @apply flex gap-4;
 
-    svg {
+    div > a > svg {
         transition: var(--dino-global-transition-duration)
             var(--dino-global-transition-timing-func);
     }
 
-    &:has(svg:hover) svg:not(:hover) {
+    &:has(div > a > svg:hover) div > a > svg:not(:hover) {
         opacity: 0.5;
     }
 }

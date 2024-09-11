@@ -1,5 +1,6 @@
 import { HTMLAttributes, ReactNode } from "react"
 import { Icon } from "../icon/Icon"
+import { Tooltip } from "../tooltip"
 
 interface IconGroup extends HTMLAttributes<HTMLDivElement> {
     items: IconGroupItem[]
@@ -21,9 +22,9 @@ export const IconGroup = (props: IconGroup) => {
             {...otherProps}
         >
             {items.map(({ children, label, key }) => (
-                <Icon label={label} key={key}>
-                    {children}
-                </Icon>
+                <Tooltip label={label} key={key}>
+                    <Icon label={label}>{children}</Icon>
+                </Tooltip>
             ))}
         </div>
     )
