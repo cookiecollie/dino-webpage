@@ -9,4 +9,8 @@
     &:has(div > a > svg:hover) div > a > svg:not(:hover) {
         opacity: 0.5;
     }
+
+    div > a > svg:hover {
+        @apply text-shellby-brown-400;
+    }
 }

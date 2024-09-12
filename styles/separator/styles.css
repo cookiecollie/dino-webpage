@@ -1,0 +1,13 @@
+.dino-separator {
+    @apply bg-shellby-brown-300;
+
+    &[data-orientation="vertical"] {
+        height: 100%;
+        width: 1px;
+    }
+
+    &[data-orientation="horizontal"] {
+        height: 1px;
+        width: 100%;
+    }
+}

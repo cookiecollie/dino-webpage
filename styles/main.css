@@ -2,6 +2,8 @@
 
 @import "./icon-group/styles.css";
 @import "./tooltip/styles.css";
+@import "./carousel/styles.css";
+@import "./separator/styles.css";
 
 @tailwind base;
 @tailwind components;
@@ -13,7 +15,7 @@ body,
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-size: 20px;
-    @apply h-full font-medium text-shellby-brown-900;
+    @apply h-full font-medium text-shellby-brown-500;
 }
 
 :root {
@@ -47,6 +49,6 @@ body,
     h4,
     h5,
     h6 {
-        @apply font-bold;
+        @apply font-bold text-shellby-brown-800;
     }
 }

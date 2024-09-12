@@ -1,0 +1,13 @@
+.dino-carousel {
+    @apply overflow-hidden;
+
+    &-container {
+        @apply flex;
+    }
+
+    &-slide {
+        flex: 0 0 calc(1 / var(--slides-in-view) * 100%);
+        min-width: 0;
+        margin-inline-end: 16px;
+    }
+}
