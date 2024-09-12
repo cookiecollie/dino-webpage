@@ -1,4 +1,5 @@
 import { Butterfly, GithubLogo, TwitchLogo } from "@phosphor-icons/react"
+import { Button } from "../../components/button"
 import { Carousel, Slide } from "../../components/carousel"
 import { IconGroup, IconGroupItem } from "../../components/icon-group"
 import { Separator } from "../../components/Separator"
@@ -86,7 +87,7 @@ export const Home = () => {
     ]
 
     return (
-        <div className="mt-36 grid grid-cols-4 gap-4 [&>div]:rounded-xl [&>div]:bg-shellby-brown-50 [&>div]:p-8">
+        <div className="mt-36 grid grid-cols-4 gap-4 [&>div]:rounded-2xl [&>div]:bg-shellby-brown-50 [&>div]:p-8">
             <div className="col-span-4 flex gap-8">
                 <div className="flex flex-col gap-8">
                     <div>
@@ -122,24 +123,37 @@ export const Home = () => {
                 />
             </div>
 
-            <div className="col-span-4 flex flex-col gap-10">
-                <div>
-                    <h5>Artworks</h5>
-                    <p>Some of the pieces I made</p>
-                    <a
-                        className="mt-4 flex w-fit items-center gap-1 text-sm text-shellby-brown-300 hover:text-shellby-brown-500"
-                        href="https://bsky.app/profile/nikkoscribblo.bsky.social"
-                        target="_blank"
-                        rel="noreferrer"
-                        style={{
-                            transition:
-                                "var(--dino-global-transition-duration) var(--dino-global-transition-timing-func)",
-                        }}
-                    >
-                        Wanna see more of these? Check this link out! &raquo;
-                    </a>
-                    <Separator className="mt-4" />
+            <div className="col-span-4">
+                <div className="flex justify-between">
+                    <div>
+                        <h5>Artworks</h5>
+                        <p>Some of the pieces I made</p>
+                    </div>
+
+                    <div className="flex flex-col gap-2">
+                        <Button asChild>
+                            <a
+                                href="https://ko-fi.com/cookiecollie/commissions"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                Commission Info
+                            </a>
+                        </Button>
+
+                        <Button asChild>
+                            <a
+                                href="https://bsky.app/profile/nikkoscribblo.bsky.social"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                See More &raquo;
+                            </a>
+                        </Button>
+                    </div>
                 </div>
+
+                <Separator className="mb-12 mt-6" />
 
                 <Carousel slidesInView={4} align={"start"} skipSnaps loop>
                     {drawings.map((d) => (

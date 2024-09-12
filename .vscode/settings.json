@@ -11,5 +11,8 @@
         "**/src/components/**/index.ts": "Index - Component \"${dirname}\"",
         "**/styles/**/styles.css": "Style - ${dirname}"
     },
-    "eslint.validate": ["json"]
+    "eslint.validate": ["json"],
+    "tailwindCSS.experimental.classRegex": [
+        ["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+    ]
 }

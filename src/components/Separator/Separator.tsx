@@ -1,4 +1,5 @@
 import * as RadixSeparator from "@radix-ui/react-separator"
+import { cn } from "../../utils"
 
 interface SeparatorProps extends RadixSeparator.SeparatorProps {}
 
@@ -7,9 +8,7 @@ export const Separator = (props: SeparatorProps) => {
     return (
         <RadixSeparator.Root
             {...otherProps}
-            className={["dino-separator", className]
-                .filter((cn) => cn != null && cn != "")
-                .join(" ")}
+            className={cn("dino-separator", className)}
         />
     )
 }

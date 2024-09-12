@@ -4,6 +4,7 @@
 @import "./tooltip/styles.css";
 @import "./carousel/styles.css";
 @import "./separator/styles.css";
+@import "./button/styles.css";
 
 @tailwind base;
 @tailwind components;
