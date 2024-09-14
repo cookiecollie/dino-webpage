@@ -5,6 +5,7 @@
 @import "./carousel/styles.css";
 @import "./separator/styles.css";
 @import "./button/styles.css";
+@import "./bento/styles.css";
 
 @tailwind base;
 @tailwind components;

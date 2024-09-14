@@ -1,0 +1,10 @@
+.dino-bento {
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: var(--template);
+
+    &-slot {
+        grid-area: var(--slot-name);
+    }
+}

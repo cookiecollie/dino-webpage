@@ -1,4 +1,5 @@
 import { Butterfly, GithubLogo, TwitchLogo } from "@phosphor-icons/react"
+import { Bento, BentoSlot } from "../../components/bento"
 import { Button } from "../../components/button"
 import { Carousel, Slide } from "../../components/carousel"
 import { IconGroup, IconGroupItem } from "../../components/icon-group"
@@ -87,43 +88,55 @@ export const Home = () => {
     ]
 
     return (
-        <div className="mt-36 grid grid-cols-4 gap-4 [&>div]:rounded-2xl [&>div]:bg-shellby-brown-50 [&>div]:p-8">
-            <div className="col-span-4 flex gap-8">
-                <div className="flex flex-col gap-8">
-                    <div>
-                        <h5>Hi there, I&apos;m Berry!</h5>
-                        <p className="font-semibold">
-                            Digital Artist | Occasional Streamer
-                        </p>
+        <Bento
+            columns={4}
+            template={`
+                    "about about about about"
+                    "artworks artworks artworks artworks"
+                    "socials socials tips tips"
+                    "blank blank tips tips"
+                `}
+            className="mt-36 gap-4 [&>div]:rounded-2xl [&>div]:bg-shellby-brown-50 [&>div]:p-8"
+        >
+            <BentoSlot slotName="about">
+                <div className="flex justify-between gap-8">
+                    <div className="flex flex-col gap-8">
+                        <div>
+                            <h5>Hi there, I&apos;m Berry!</h5>
+                            <p className="font-semibold">
+                                Digital Artist | Occasional Streamer
+                            </p>
+                        </div>
+
+                        <div className="flex flex-col gap-4">
+                            <p>
+                                Welcome to my little site! I&apos;m Berry, a
+                                self-employed artist who draws cute furry
+                                critters, and also an occasional streamer.
+                            </p>
+
+                            <p>
+                                Feel free to take look around if you wanna know
+                                more about me!
+                            </p>
+                        </div>
+
+                        <IconGroup
+                            items={links}
+                            className="text-shellby-brown-300"
+                        />
                     </div>
 
-                    <div className="flex flex-col gap-4">
-                        <p>
-                            Welcome to my little site! I&apos;m Berry, a
-                            self-employed artist who draws cute furry critters,
-                            and also an occasional streamer.
-                        </p>
-
-                        <p>
-                            Feel free to take look around if you wanna know more
-                            about me!
-                        </p>
-                    </div>
-
-                    <IconGroup
-                        items={links}
-                        className="text-shellby-brown-300"
+                    <img
+                        loading="lazy"
+                        src="/resources/webp/about.webp"
+                        alt="Berry drawing by me"
+                        className="w-full rounded-xl object-cover"
                     />
                 </div>
+            </BentoSlot>
 
-                <img
-                    src="/resources/webp/about.webp"
-                    alt=""
-                    className="w-full rounded-xl object-cover"
-                />
-            </div>
-
-            <div className="col-span-4">
+            <BentoSlot slotName="artworks">
                 <div className="flex justify-between">
                     <div>
                         <h5>Artworks</h5>
@@ -166,7 +179,67 @@ export const Home = () => {
                         </Slide>
                     ))}
                 </Carousel>
-            </div>
-        </div>
+            </BentoSlot>
+
+            <BentoSlot slotName="socials">
+                <h5>Socials</h5>
+                <p>All my socials in one place</p>
+
+                <Separator className="mb-12 mt-6" />
+
+                <div className="flex flex-col gap-4">
+                    <Button asChild>
+                        <a
+                            href="https://bsky.app/profile/nikkoscribblo.bsky.social"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Bluesky
+                        </a>
+                    </Button>
+
+                    <Button asChild>
+                        <a
+                            href="https://www.twitch.tv/cookiecollie"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Twitch
+                        </a>
+                    </Button>
+
+                    <Button asChild>
+                        <a
+                            href="https://github.com/cookiecollie"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Github
+                        </a>
+                    </Button>
+                </div>
+            </BentoSlot>
+
+            <BentoSlot slotName="tips">
+                <h5>Tips</h5>
+                <p>Feel free to support me!</p>
+
+                <Separator className="mb-12 mt-6" />
+
+                <div>
+                    <iframe
+                        id="kofiframe"
+                        src="https://ko-fi.com/cookiecollie/?hidefeed=true&widget=true&embed=true&preview=true"
+                        style={{
+                            border: "none",
+                            width: "100%",
+                        }}
+                        className="bg-shellby-brown-50"
+                        height="612"
+                        title="cookiecollie"
+                    />
+                </div>
+            </BentoSlot>
+        </Bento>
     )
 }
