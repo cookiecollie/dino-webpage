@@ -1,8 +1,14 @@
-import { Butterfly, GithubLogo, TwitchLogo } from "@phosphor-icons/react"
+import {
+    Butterfly,
+    GithubLogo,
+    IconContext,
+    TwitchLogo,
+} from "@phosphor-icons/react"
 import { Bento, BentoSlot } from "../../components/bento"
 import { Button } from "../../components/button"
 import { Carousel, Slide } from "../../components/carousel"
 import { IconGroup, IconGroupItem } from "../../components/icon-group"
+import { Link } from "../../components/link"
 import { Separator } from "../../components/Separator"
 
 export const Home = () => {
@@ -122,10 +128,14 @@ export const Home = () => {
                             </p>
                         </div>
 
-                        <IconGroup
-                            items={links}
-                            className="text-shellby-brown-300"
-                        />
+                        <IconContext.Provider
+                            value={{ size: 24, weight: "fill" }}
+                        >
+                            <IconGroup
+                                items={links}
+                                className="text-shellby-brown-300"
+                            />
+                        </IconContext.Provider>
                     </div>
 
                     <img
@@ -189,35 +199,52 @@ export const Home = () => {
                 <Separator className="mb-12 mt-6" />
 
                 <div className="flex flex-col gap-4">
-                    <Button asChild>
-                        <a
-                            href="https://bsky.app/profile/nikkoscribblo.bsky.social"
-                            target="_blank"
-                            rel="noreferrer"
+                    <IconContext.Provider value={{ size: 18, weight: "fill" }}>
+                        <Button
+                            asChild
+                            themeColor="var(--color-brands-bluesky)"
                         >
-                            Bluesky
-                        </a>
-                    </Button>
+                            <a
+                                href="https://bsky.app/profile/nikkoscribblo.bsky.social"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <span className="flex items-center gap-2">
+                                    <Butterfly />
+                                    Bluesky
+                                    <Butterfly />
+                                </span>
+                            </a>
+                        </Button>
 
-                    <Button asChild>
-                        <a
-                            href="https://www.twitch.tv/cookiecollie"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            Twitch
-                        </a>
-                    </Button>
+                        <Button asChild themeColor="var(--color-brands-twitch)">
+                            <a
+                                href="https://www.twitch.tv/cookiecollie"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <span className="flex items-center gap-2">
+                                    <TwitchLogo />
+                                    Twitch
+                                    <TwitchLogo />
+                                </span>
+                            </a>
+                        </Button>
 
-                    <Button asChild>
-                        <a
-                            href="https://github.com/cookiecollie"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            Github
-                        </a>
-                    </Button>
+                        <Button asChild themeColor="var(--color-brands-github)">
+                            <a
+                                href="https://github.com/cookiecollie"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <span className="flex items-center gap-2">
+                                    <GithubLogo />
+                                    Github
+                                    <GithubLogo />
+                                </span>
+                            </a>
+                        </Button>
+                    </IconContext.Provider>
                 </div>
             </BentoSlot>
 
@@ -251,24 +278,24 @@ export const Home = () => {
                     <ul className="list-inside list-disc">
                         <li>
                             Icons:{" "}
-                            <a
+                            <Link
                                 href="https://phosphoricons.com/"
                                 target="_blank"
                                 rel="noreferrer"
                             >
                                 Phosphor Icons
-                            </a>
+                            </Link>
                         </li>
 
                         <li>
                             Components: Custom-built using{" "}
-                            <a
+                            <Link
                                 href="https://www.radix-ui.com/primitives"
                                 target="_blank"
                                 rel="noreferrer"
                             >
                                 Radix Primitives
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>

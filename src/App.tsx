@@ -14,7 +14,7 @@ function App() {
                         href="https://bsky.app/profile/nikkoscribblo.bsky.social"
                         target="_blank"
                         rel="noreferrer"
-                        className="text-shellby-brown-500"
+                        className="font-semibold text-shellby-brown-500"
                     >
                         Berry
                     </a>

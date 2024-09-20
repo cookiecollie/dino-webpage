@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
+@import "../build/css/colors.css";
+
 @import "./icon-group/styles.css";
 @import "./tooltip/styles.css";
 @import "./carousel/styles.css";
 @import "./separator/styles.css";
 @import "./button/styles.css";
 @import "./bento/styles.css";
+@import "./link/styles.css";
 
 @tailwind base;
 @tailwind components;
@@ -51,10 +54,6 @@ body,
     h4,
     h5,
     h6 {
-        @apply font-bold text-shellby-brown-800;
-    }
-
-    a {
-        @apply font-bold;
+        @apply font-bold text-typography-heading;
     }
 }

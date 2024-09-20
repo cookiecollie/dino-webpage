@@ -1,0 +1,20 @@
+.dino-link {
+    --active: 0;
+
+    @apply relative font-bold;
+
+    &::after {
+        transition: var(--dino-global-transition-duration)
+            var(--dino-global-transition-delay)
+            var(--dino-global-transition-timing-func);
+        content: "";
+        height: 1px;
+        width: calc(var(--active) * 100%);
+
+        @apply bg-typography-default absolute left-0 top-full;
+    }
+
+    &:is(:hover, :focus)::after {
+        --active: 1;
+    }
+}

@@ -66,5 +66,10 @@ module.exports = {
                 },
             ],
         },
+        css: {
+            transformGroup: "css",
+            buildPath: "build/css/",
+            files: [{ destination: "colors.css", format: "css/variables" }],
+        },
     },
 }

@@ -54,6 +54,12 @@
             "default": { "value": "{color.base.shellby-brown.500}" },
             "heading": { "value": "{color.base.shellby-brown.800}" },
             "separator": { "value": "{color.base.shellby-brown.300}" }
+        },
+
+        "brands": {
+            "bluesky": { "value": "#1884fc" },
+            "twitch": { "value": "#6441a5" },
+            "github": { "value": "#171515" }
         }
     }
 }

@@ -47,5 +47,10 @@
         "default": "#b4785b",
         "heading": "#71443b",
         "separator": "#d3b49e"
+    },
+    "brands": {
+        "bluesky": "#1884fc",
+        "twitch": "#6441a5",
+        "github": "#171515"
     }
 }

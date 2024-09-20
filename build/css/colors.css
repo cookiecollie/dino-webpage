@@ -1,0 +1,64 @@
+/**
+ * Do not edit directly
+ * Generated on Fri, 20 Sep 2024 21:04:14 GMT
+ */
+
+:root {
+  --color-base-nikko-blue-50: #eef4ff;
+  --color-base-nikko-blue-100: #dfebff;
+  --color-base-nikko-blue-200: #bbd1ff;
+  --color-base-nikko-blue-300: #a3befe;
+  --color-base-nikko-blue-400: #7f99fa;
+  --color-base-nikko-blue-500: #6076f4;
+  --color-base-nikko-blue-600: #434ee8;
+  --color-base-nikko-blue-700: #353ccd;
+  --color-base-nikko-blue-800: #2e36a5;
+  --color-base-nikko-blue-900: #2c3383;
+  --color-base-nikko-blue-950: #1a1d4c;
+  --color-base-shellby-brown-50: #faf5f2;
+  --color-base-shellby-brown-100: #ede1d6;
+  --color-base-shellby-brown-200: #e4d2c4;
+  --color-base-shellby-brown-300: #d3b49e;
+  --color-base-shellby-brown-400: #c19176;
+  --color-base-shellby-brown-500: #b4785b;
+  --color-base-shellby-brown-600: #a66550;
+  --color-base-shellby-brown-700: #8a5144;
+  --color-base-shellby-brown-800: #71443b;
+  --color-base-shellby-brown-900: #5c3932;
+  --color-base-shellby-brown-950: #311c19;
+  --color-base-neutral-50: #fefefe;
+  --color-base-neutral-100: #e7e7e7;
+  --color-base-neutral-200: #d1d1d1;
+  --color-base-neutral-300: #b0b0b0;
+  --color-base-neutral-400: #888888;
+  --color-base-neutral-500: #6d6d6d;
+  --color-base-neutral-600: #5d5d5d;
+  --color-base-neutral-700: #4f4f4f;
+  --color-base-neutral-800: #454545;
+  --color-base-neutral-900: #3d3d3d;
+  --color-base-neutral-950: #2e2e2e;
+  --color-default-text: #b4785b;
+  --color-default-heading: #71443b;
+  --color-default-separator: #d3b49e;
+  --color-typography-default: #b4785b;
+  --color-typography-heading: #71443b;
+  --color-typography-separator: #d3b49e;
+  --color-brands-bluesky: #1884fc;
+  --color-brands-twitch: #6441a5;
+  --color-brands-github: #171515;
+  --typography-size-xs: 0.563rem;
+  --typography-size-sm: 0.75rem;
+  --typography-size-md: 1rem;
+  --typography-size-lg: 1.333rem;
+  --typography-size-xl: 1.777rem;
+  --typography-size-2xl: 2.369rem;
+  --typography-size-3xl: 3.157rem;
+  --typography-size-4xl: 4.209rem;
+  --typography-size-5xl: 5.61rem;
+  --typography-size-h1: 5.61rem;
+  --typography-size-h2: 4.209rem;
+  --typography-size-h3: 3.157rem;
+  --typography-size-h4: 2.369rem;
+  --typography-size-h5: 1.777rem;
+  --typography-size-h6: 1.333rem;
+}
