@@ -1,8 +1,8 @@
 .dino-bento {
     display: grid;
-    grid-template-columns: repeat(var(--columns), 1fr);
-    grid-template-rows: auto;
-    grid-template-areas: var(--template);
+    grid-template-columns: var(--columns-template);
+    grid-template-rows: var(--rows-template);
+    grid-template-areas: var(--area-template);
 
     &-slot {
         grid-area: var(--slot-name);

@@ -89,12 +89,13 @@ export const Home = () => {
 
     return (
         <Bento
-            columns={4}
-            template={`
+            columnsTemplate="repeat(4, 1fr)"
+            rowsTemplate="repeat(2, auto) repeat(2, 1fr)"
+            areaTemplate={`
                     "about about about about"
                     "artworks artworks artworks artworks"
                     "socials socials tips tips"
-                    "blank blank tips tips"
+                    "credits credits tips tips"
                 `}
             className="mt-36 gap-4 [&>div]:rounded-2xl [&>div]:bg-shellby-brown-50 [&>div]:p-8"
         >
@@ -238,6 +239,38 @@ export const Home = () => {
                         height="612"
                         title="cookiecollie"
                     />
+                </div>
+            </BentoSlot>
+
+            <BentoSlot slotName="credits">
+                <h5>Credits</h5>
+
+                <Separator className="mb-12 mt-6" />
+
+                <div>
+                    <ul className="list-inside list-disc">
+                        <li>
+                            Icons:{" "}
+                            <a
+                                href="https://phosphoricons.com/"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                Phosphor Icons
+                            </a>
+                        </li>
+
+                        <li>
+                            Components: Custom-built using{" "}
+                            <a
+                                href="https://www.radix-ui.com/primitives"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                Radix Primitives
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </BentoSlot>
         </Bento>

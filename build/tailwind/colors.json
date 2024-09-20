@@ -37,5 +37,15 @@
         "800": "#454545",
         "900": "#3d3d3d",
         "950": "#2e2e2e"
+    },
+    "default": {
+        "text": "#b4785b",
+        "heading": "#71443b",
+        "separator": "#d3b49e"
+    },
+    "typography": {
+        "default": "#b4785b",
+        "heading": "#71443b",
+        "separator": "#d3b49e"
     }
 }

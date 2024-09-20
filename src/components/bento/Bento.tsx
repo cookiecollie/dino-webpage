@@ -2,20 +2,29 @@ import { CSSProperties, HTMLAttributes } from "react"
 import { cn } from "../../utils"
 
 interface BentoProps extends HTMLAttributes<HTMLDivElement> {
-    template: string
-    columns: number
+    areaTemplate: string
+    columnsTemplate?: string
+    rowsTemplate?: string
 }
 
 export const Bento = (props: BentoProps) => {
-    const { children, template, columns, className, ...otherProps } = props
+    const {
+        children,
+        areaTemplate,
+        columnsTemplate,
+        rowsTemplate,
+        className,
+        ...otherProps
+    } = props
 
     return (
         <div
             {...otherProps}
             style={
                 {
-                    "--template": template,
-                    "--columns": columns,
+                    "--area-template": areaTemplate,
+                    "--columns-template": columnsTemplate,
+                    "--rows-template": rowsTemplate,
                 } as CSSProperties
             }
             className={cn("dino-bento", className)}

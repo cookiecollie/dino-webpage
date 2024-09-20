@@ -17,7 +17,7 @@ body,
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-size: 20px;
-    @apply h-full font-medium text-shellby-brown-500;
+    @apply text-typography-default h-full font-medium;
 }
 
 :root {
@@ -52,5 +52,9 @@ body,
     h5,
     h6 {
         @apply font-bold text-shellby-brown-800;
+    }
+
+    a {
+        @apply font-bold;
     }
 }

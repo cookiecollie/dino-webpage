@@ -7,16 +7,19 @@ StyleDictionary.registerFormat({
         const tokens = dictionary.allTokens
             .map(({ attributes, value }) => {
                 return attributes.category === "color"
-                    ? [
-                          attributes.item,
-                          attributes.subitem
-                              ? [attributes.subitem, value]
-                              : value,
-                      ]
+                    ? attributes.type === "base"
+                        ? [attributes.item, [attributes.subitem, value]]
+                        : [attributes.type, [attributes.item, value]]
                     : null
             })
             .filter((entry) => entry != null)
-            .map(([k, v]) => [k, Object.fromEntries([v])])
+            .map(([k, v]) => {
+                try {
+                    return [k, Object.fromEntries([v])]
+                } catch (e) {
+                    return `${e.name}: ${e.message}`
+                }
+            })
             .reduce(
                 (obj, [k, v]) => ({
                     ...obj,

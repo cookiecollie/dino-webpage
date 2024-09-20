@@ -42,6 +42,18 @@
                 "900": { "value": "#3d3d3d" },
                 "950": { "value": "#2e2e2e" }
             }
+        },
+
+        "default": {
+            "text": { "value": "{color.base.shellby-brown.500}" },
+            "heading": { "value": "{color.base.shellby-brown.800}" },
+            "separator": { "value": "{color.base.shellby-brown.300}" }
+        },
+
+        "typography": {
+            "default": { "value": "{color.base.shellby-brown.500}" },
+            "heading": { "value": "{color.base.shellby-brown.800}" },
+            "separator": { "value": "{color.base.shellby-brown.300}" }
         }
     }
 }

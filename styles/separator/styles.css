@@ -1,5 +1,5 @@
 .dino-separator {
-    @apply bg-shellby-brown-300;
+    @apply bg-default-separator;
 
     &[data-orientation="vertical"] {
         height: 100%;
