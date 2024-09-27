@@ -1,0 +1,31 @@
+.dino-magnet {
+    @apply relative;
+
+    &::after {
+        transition:
+            opacity var(--dino-global-transition-duration),
+            inset var(--dino-global-transition-duration)
+                var(--dino-global-transition-delay);
+        transition-timing-function: var(--dino-global-transition-timing-func);
+        content: "";
+        z-index: -1;
+
+        inset: calc(var(--top) * 1px) calc(100% - var(--right) * 1px)
+            calc(100% - var(--bottom) * 1px) calc(var(--left) * 1px);
+
+        opacity: var(--active, 0);
+
+        @apply pointer-events-none absolute rounded-full bg-default-separator;
+    }
+
+    &:hover {
+        --active: 1;
+
+        &::after {
+            transition:
+                opacity var(--dino-global-transition-duration)
+                    var(--dino-global-transition-delay),
+                inset var(--dino-global-transition-duration);
+        }
+    }
+}

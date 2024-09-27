@@ -1,5 +1,15 @@
 .dino-tooltip {
     &-floating {
-        @apply relative rounded-lg bg-neutral-50 px-2 py-1 text-sm shadow-md;
+        @apply relative inline-block rounded-lg bg-neutral-50 px-2 py-1 text-sm font-bold text-typography-default shadow-md;
+        transition: var(--dino-global-transition-duration)
+            var(--dino-global-transition-timing-func);
+
+        opacity: 0;
+        transform: translateY(4px);
+
+        &[data-animate="true"] {
+            opacity: 1;
+            transform: translateY(0px);
+        }
     }
 }

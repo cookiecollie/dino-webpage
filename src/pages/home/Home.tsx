@@ -9,7 +9,7 @@ import { Button } from "../../components/button"
 import { Carousel, Slide } from "../../components/carousel"
 import { IconGroup, IconGroupItem } from "../../components/icon-group"
 import { Link } from "../../components/link"
-import { Separator } from "../../components/Separator"
+import { Separator } from "../../components/separator"
 
 export const Home = () => {
     const links: IconGroupItem[] = [
@@ -56,40 +56,52 @@ export const Home = () => {
         },
     ]
 
-    const drawings: { key: string; src: string }[] = [
+    const drawings: { key: string; imgSrc: string; src: string }[] = [
+        {
+            key: "shellby-sit",
+            imgSrc: "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:zwvrinmsejg2lw6yfkk5dgxm/bafkreicmk2swuawcsycdrcyzsvb6bsbecfha7mz7q3gkq6xmf44p7c2waa@jpeg",
+            src: "https://bsky.app/profile/nikkoscribblo.bsky.social/post/3l4327yqo7g25",
+        },
         {
             key: "sketch-shellby",
-            src: "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:zwvrinmsejg2lw6yfkk5dgxm/bafkreih6am3pdhhbaem44p4gzz5i5xmlzbm7ik6jsp7zgee4w374p6o2w4@jpeg",
+            imgSrc: "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:zwvrinmsejg2lw6yfkk5dgxm/bafkreih6am3pdhhbaem44p4gzz5i5xmlzbm7ik6jsp7zgee4w374p6o2w4@jpeg",
+            src: "https://bsky.app/profile/nikkoscribblo.bsky.social/post/3l374qawwj42h",
         },
 
         {
             key: "emote-shellby",
-            src: "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:zwvrinmsejg2lw6yfkk5dgxm/bafkreib3eiyuezs24jdgiqkvubx6flgbuduloia7o7tohilmhqwglfcjbq@jpeg",
+            imgSrc: "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:zwvrinmsejg2lw6yfkk5dgxm/bafkreib3eiyuezs24jdgiqkvubx6flgbuduloia7o7tohilmhqwglfcjbq@jpeg",
+            src: "https://bsky.app/profile/nikkoscribblo.bsky.social/post/3kzzkzkkedq2p",
         },
 
         {
             key: "ref-shellby",
-            src: "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:zwvrinmsejg2lw6yfkk5dgxm/bafkreid5ggjc65fc6is3a5ndlijoakef22ossv3rkflovsj2i77xlb3dmq@jpeg",
+            imgSrc: "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:zwvrinmsejg2lw6yfkk5dgxm/bafkreid5ggjc65fc6is3a5ndlijoakef22ossv3rkflovsj2i77xlb3dmq@jpeg",
+            src: "https://bsky.app/profile/nikkoscribblo.bsky.social/post/3ks33lu4qwm2n",
         },
 
         {
             key: "gift-midori",
-            src: "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:zwvrinmsejg2lw6yfkk5dgxm/bafkreidbnezbb5ztdgrz7ayadoy4tm6k264ea7a2fm4bf77cqqw6ghxtia@jpeg",
+            imgSrc: "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:zwvrinmsejg2lw6yfkk5dgxm/bafkreidbnezbb5ztdgrz7ayadoy4tm6k264ea7a2fm4bf77cqqw6ghxtia@jpeg",
+            src: "https://bsky.app/profile/nikkoscribblo.bsky.social/post/3kpgwappaif2f",
         },
 
         {
             key: "gift-fenme",
-            src: "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:zwvrinmsejg2lw6yfkk5dgxm/bafkreifmi7kfe7t2su3vummv5hscuko3r6nwy5gxityvey6lcgl5vmlsym@jpeg",
+            imgSrc: "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:zwvrinmsejg2lw6yfkk5dgxm/bafkreifmi7kfe7t2su3vummv5hscuko3r6nwy5gxityvey6lcgl5vmlsym@jpeg",
+            src: "https://bsky.app/profile/nikkoscribblo.bsky.social/post/3knyvg7s7ke2u",
         },
 
         {
             key: "gift-orb",
-            src: "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:zwvrinmsejg2lw6yfkk5dgxm/bafkreid6dexkbkp4pwbsnxrcwlzi2fuq7imu3y3ohfcrrk73vplc7m4gjy@jpeg",
+            imgSrc: "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:zwvrinmsejg2lw6yfkk5dgxm/bafkreid6dexkbkp4pwbsnxrcwlzi2fuq7imu3y3ohfcrrk73vplc7m4gjy@jpeg",
+            src: "https://bsky.app/profile/nikkoscribblo.bsky.social/post/3kjgwvwcfsx27",
         },
 
         {
             key: "meme-pool",
-            src: "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:zwvrinmsejg2lw6yfkk5dgxm/bafkreihilzrlqpsi6arsrh3ygqnefqinegi4xyqvi6xf6clksfypnx3ipi@jpeg",
+            imgSrc: "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:zwvrinmsejg2lw6yfkk5dgxm/bafkreihilzrlqpsi6arsrh3ygqnefqinegi4xyqvi6xf6clksfypnx3ipi@jpeg",
+            src: "https://bsky.app/profile/nikkoscribblo.bsky.social/post/3kxathizfmy2p",
         },
     ]
 
@@ -182,11 +194,13 @@ export const Home = () => {
                 <Carousel slidesInView={4} align={"start"} skipSnaps loop>
                     {drawings.map((d) => (
                         <Slide key={d.key}>
-                            <img
-                                src={d.src}
-                                loading="lazy"
-                                className="rounded-2xl"
-                            />
+                            <a href={d.src} target="_blank" rel="noreferrer">
+                                <img
+                                    src={d.imgSrc}
+                                    loading="lazy"
+                                    className="rounded-2xl"
+                                />
+                            </a>
                         </Slide>
                     ))}
                 </Carousel>

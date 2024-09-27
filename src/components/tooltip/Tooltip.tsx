@@ -13,6 +13,7 @@ import {
     useRole,
 } from "@floating-ui/react"
 import { PropsWithChildren, useRef, useState } from "react"
+import { useMountTransition } from "../../utils"
 
 interface TooltipProps extends PropsWithChildren {
     label: string
@@ -53,19 +54,26 @@ export const Tooltip = (props: TooltipProps) => {
         role,
     ])
 
+    const tooltipRef = useRef<HTMLSpanElement>(null)
+    const { state, shouldAnimate } = useMountTransition(tooltipRef, isOpen)
+
     return (
         <>
             <div ref={refs.setReference} {...getReferenceProps()}>
                 {children}
             </div>
 
-            {isOpen && (
+            {(isOpen || shouldAnimate) && (
                 <div
                     ref={refs.setFloating}
                     {...getFloatingProps()}
                     style={floatingStyles}
                 >
-                    <span className="dino-tooltip-floating">
+                    <span
+                        className="dino-tooltip-floating"
+                        data-animate={state}
+                        ref={tooltipRef}
+                    >
                         <FloatingArrow
                             ref={arrowRef}
                             context={context}

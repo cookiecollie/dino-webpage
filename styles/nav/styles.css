@@ -1,0 +1,75 @@
+.dino-navigation {
+    &-root {
+        @apply relative flex w-full justify-center;
+        z-index: 1;
+    }
+
+    &-list {
+        @apply relative justify-center rounded-full border bg-neutral-50 p-1 shadow-md;
+        list-style: none;
+        margin: 0;
+        display: grid;
+        grid-auto-columns: minmax(0, 1fr);
+        grid-auto-flow: column;
+    }
+
+    &-link,
+    &-trigger {
+        @apply flex h-full select-none rounded-full px-4 py-1 outline-none;
+
+        &:focus {
+        }
+
+        &:focus-visible {
+            box-shadow: 0 0 0 2px var(--color-base-shellby-brown-400);
+            @apply outline-none;
+        }
+
+        &:hover {
+            @apply bg-shellby-brown-100;
+        }
+
+        &[data-active]:hover {
+            @apply bg-transparent;
+        }
+    }
+
+    &-link {
+        @apply relative items-center justify-center;
+        text-decoration: none;
+        z-index: 1;
+
+        &[data-active] {
+            /* @apply text-neutral-50; */
+        }
+    }
+
+    &-pill {
+        z-index: 1;
+
+        @apply pointer-events-none absolute h-full w-full p-1;
+
+        ul {
+            list-style: none;
+            margin: 0;
+            height: 100%;
+            display: grid;
+            grid-auto-columns: minmax(0, 1fr);
+            grid-auto-flow: column;
+
+            transition: clip-path var(--dino-global-transition-duration)
+                var(--dino-global-transition-timing-func);
+
+            clip-path: inset(
+                0 calc(calc(var(--items-number) - var(--active-index)) * 25%) 0
+                    calc((var(--active-index) - 1) * 25%) round 9999px
+            );
+
+            @apply bg-shellby-brown-400 text-neutral-50;
+
+            li {
+                @apply flex items-center justify-center;
+            }
+        }
+    }
+}
