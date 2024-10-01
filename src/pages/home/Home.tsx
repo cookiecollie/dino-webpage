@@ -115,7 +115,7 @@ export const Home = () => {
                     "socials socials tips tips"
                     "credits credits tips tips"
                 `}
-            className="mt-36 gap-4 [&>div]:rounded-2xl [&>div]:bg-shellby-brown-50 [&>div]:p-8"
+            className="gap-4 [&>div]:rounded-2xl [&>div]:bg-shellby-brown-50 [&>div]:p-8"
         >
             <BentoSlot slotName="about">
                 <div className="flex justify-between gap-8">

@@ -1,7 +1,6 @@
 .dino-navigation {
     &-root {
         @apply relative flex w-full justify-center;
-        z-index: 1;
     }
 
     &-list {
@@ -37,16 +36,9 @@
     &-link {
         @apply relative items-center justify-center;
         text-decoration: none;
-        z-index: 1;
-
-        &[data-active] {
-            /* @apply text-neutral-50; */
-        }
     }
 
     &-pill {
-        z-index: 1;
-
         @apply pointer-events-none absolute h-full w-full p-1;
 
         ul {
@@ -61,8 +53,17 @@
                 var(--dino-global-transition-timing-func);
 
             clip-path: inset(
-                0 calc(calc(var(--items-number) - var(--active-index)) * 25%) 0
-                    calc((var(--active-index) - 1) * 25%) round 9999px
+                0
+                    calc(
+                        (var(--items-number) - var(--active-index)) *
+                            (1 / var(--items-number) * 100%)
+                    )
+                    0
+                    calc(
+                        (var(--active-index) - 1) *
+                            (1 / var(--items-number) * 100%)
+                    )
+                    round 9999px
             );
 
             @apply bg-shellby-brown-400 text-neutral-50;

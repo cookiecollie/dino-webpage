@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 20 Sep 2024 21:04:14 GMT
+ * Generated on Tue, 01 Oct 2024 14:41:37 GMT
  */
 
 :root {
@@ -37,6 +37,28 @@
   --color-base-neutral-800: #454545;
   --color-base-neutral-900: #3d3d3d;
   --color-base-neutral-950: #2e2e2e;
+  --color-base-red-50: #fff1f1;
+  --color-base-red-100: #ffdfdf;
+  --color-base-red-200: #ffc5c6;
+  --color-base-red-300: #ff9d9e;
+  --color-base-red-400: #ff6466;
+  --color-base-red-500: #ff4d4f;
+  --color-base-red-600: #ed1517;
+  --color-base-red-700: #c80d0f;
+  --color-base-red-800: #a50f11;
+  --color-base-red-900: #881415;
+  --color-base-red-950: #4b0405;
+  --color-base-lima-50: #f1fde8;
+  --color-base-lima-100: #dffbcc;
+  --color-base-lima-200: #c0f79f;
+  --color-base-lima-300: #98ef67;
+  --color-base-lima-400: #74e239;
+  --color-base-lima-500: #52c41a;
+  --color-base-lima-600: #3d9f11;
+  --color-base-lima-700: #317912;
+  --color-base-lima-800: #2a6014;
+  --color-base-lima-900: #265116;
+  --color-base-lima-950: #0f2d06;
   --color-default-text: #b4785b;
   --color-default-heading: #71443b;
   --color-default-separator: #d3b49e;

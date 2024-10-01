@@ -2,7 +2,7 @@ import { CSSProperties, HTMLAttributes } from "react"
 import { cn } from "../../utils"
 
 interface BentoProps extends HTMLAttributes<HTMLDivElement> {
-    areaTemplate: string
+    areaTemplate?: string
     columnsTemplate?: string
     rowsTemplate?: string
 }
@@ -35,11 +35,11 @@ export const Bento = (props: BentoProps) => {
 }
 
 interface BentoSlotProps extends HTMLAttributes<HTMLDivElement> {
-    slotName: string
+    slotName?: string
 }
 
 export const BentoSlot = (props: BentoSlotProps) => {
-    const { children, slotName, ...otherProps } = props
+    const { children, slotName, className, ...otherProps } = props
     return (
         <div
             {...otherProps}
@@ -48,7 +48,7 @@ export const BentoSlot = (props: BentoSlotProps) => {
                     "--slot-name": slotName,
                 } as CSSProperties
             }
-            className="dino-bento-slot"
+            className={cn("dino-bento-slot", className)}
         >
             {children}
         </div>

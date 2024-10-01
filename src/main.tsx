@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client"
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import "../styles/main.css"
 import App from "./App.tsx"
+import { Commission } from "./pages/commission/Commission.tsx"
 import { Home } from "./pages/home/Home.tsx"
 
 const router = createBrowserRouter([
@@ -12,7 +13,7 @@ const router = createBrowserRouter([
         errorElement: <>error</>,
         children: [
             { index: true, element: <Home /> },
-            { path: "/commission", element: <>Comm</> },
+            { path: "/commission", element: <Commission /> },
         ],
     },
 ])

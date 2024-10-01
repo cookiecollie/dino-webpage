@@ -1,0 +1,61 @@
+.dino-commission-card {
+    --transition-duration: 0.4s;
+    @apply relative flex h-full flex-col justify-between overflow-hidden rounded-2xl;
+
+    &-background {
+        @apply absolute;
+
+        transition: var(--transition-duration)
+            var(--dino-global-transition-timing-func);
+
+        mask-image: linear-gradient(
+            0deg,
+            transparent var(--gradient-cutoff, 35%),
+            #000
+        );
+        filter: blur(2px);
+    }
+
+    &-title-section {
+        @apply pointer-events-none p-6;
+
+        transition: var(--transition-duration)
+            var(--dino-global-transition-timing-func);
+
+        z-index: 1;
+    }
+
+    &-cta-section {
+        @apply pointer-events-none absolute bottom-0 px-6 py-4;
+
+        transition: var(--transition-duration)
+            var(--dino-global-transition-timing-func);
+        transform: translateY(var(--shift-length, 2.5rem));
+        opacity: 0;
+        filter: blur(2px);
+    }
+
+    &-cta {
+        @apply pointer-events-auto relative inline-block text-sm font-bold;
+
+        &::after {
+            transition: var(--transition-duration)
+                var(--dino-global-transition-timing-func);
+            content: "";
+            width: calc(var(--hovering, 0) * 100%);
+            height: 1px;
+            @apply absolute bottom-0 left-0 bg-typography-default;
+        }
+
+        &:hover {
+            --hovering: 1;
+        }
+    }
+
+    &-overlay {
+        transition: var(--transition-duration)
+            var(--dino-global-transition-timing-func);
+
+        @apply pointer-events-none absolute inset-0;
+    }
+}

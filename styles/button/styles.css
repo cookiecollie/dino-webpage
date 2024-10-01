@@ -13,4 +13,8 @@
             from var(--theme-color, var(--default-theme-color)) r g b / 0.2
         );
     }
+
+    &[data-fit="true"] {
+        @apply w-fit;
+    }
 }

@@ -1,4 +1,4 @@
-import { House, IconContext, Palette, Placeholder } from "@phosphor-icons/react"
+import { House, IconContext, Palette } from "@phosphor-icons/react"
 import { Outlet } from "react-router-dom"
 import { Icon } from "./components/icon"
 import { NavigationItems, NavigationMenu } from "./components/navigation-menu"
@@ -24,37 +24,17 @@ function App() {
             key: "nav-item-commission",
             to: "/commission",
         },
-
-        {
-            element: (
-                <Icon label="placeholder">
-                    <Placeholder />
-                </Icon>
-            ),
-            key: "nav-item-placeholder1",
-            to: "#",
-        },
-
-        {
-            element: (
-                <Icon label="placeholder">
-                    <Placeholder />
-                </Icon>
-            ),
-            key: "nav-item-placeholder2",
-            to: "#",
-        },
     ]
 
     return (
         <>
-            <div className="fixed left-[50%] top-0 z-[1] mt-10 translate-x-[-50%]">
+            <div className="fixed left-[50%] top-0 z-[2] mt-10 translate-x-[-50%]">
                 <IconContext.Provider value={{ size: 24 }}>
                     <NavigationMenu items={navigationItems} />
                 </IconContext.Provider>
             </div>
 
-            <div className="mx-auto w-full sm:max-w-2xl">
+            <div className="mx-auto mt-36 w-full sm:max-w-2xl">
                 <Outlet />
             </div>
 

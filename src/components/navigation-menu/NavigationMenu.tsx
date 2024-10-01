@@ -73,7 +73,11 @@ const NavigationPill = (props: NavigationPillProps) => {
     const { items, indicatorStyle } = props
 
     return (
-        <div className="dino-navigation-pill" style={indicatorStyle}>
+        <div
+            className="dino-navigation-pill"
+            style={indicatorStyle}
+            aria-hidden
+        >
             <ul>
                 {items.map((i) => (
                     <li key={i.key}>{i.element}</li>

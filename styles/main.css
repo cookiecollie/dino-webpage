@@ -11,6 +11,8 @@
 @import "./link/styles.css";
 @import "./nav/styles.css";
 @import "./magnet-group/styles.css";
+@import "./commission-card/styles.css";
+@import "./badge/styles.css";
 
 @tailwind base;
 @tailwind components;

@@ -1,0 +1,35 @@
+.dino-badge {
+    --margin: 8px;
+    --color-default: var(--color-base-shellby-brown-400);
+
+    @apply absolute whitespace-nowrap px-2 text-sm text-neutral-50;
+    inset-inline-end: calc(var(--margin) * -1);
+    top: var(--margin);
+    border-radius: 4px;
+    border-end-end-radius: 0px;
+    background-color: var(--color, var(--color-default));
+
+    &::after {
+        content: "";
+        border: calc(var(--margin) / 2) solid;
+        border-inline-end-color: transparent;
+        border-block-end-color: transparent;
+        color: var(--color, var(--color-default));
+        top: 100%;
+        right: 0;
+        transform-origin: top;
+        transform: scaleY(0.75);
+        filter: brightness(75%);
+
+        @apply absolute;
+    }
+
+    &-wrapper {
+        @apply relative h-full;
+
+        &::after,
+        &::before {
+            box-sizing: border-box;
+        }
+    }
+}
