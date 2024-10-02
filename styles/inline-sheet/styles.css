@@ -1,0 +1,13 @@
+.dino-inline-sheet {
+    @apply !aspect-auto !basis-full overflow-hidden;
+    grid-template-rows: 1fr;
+    transition: 1s var(--dino-global-transition-timing-func);
+
+    & > * {
+        min-height: 0;
+    }
+
+    &[data-active="false"] {
+        grid-template-rows: 0fr;
+    }
+}

@@ -1,6 +1,6 @@
 .dino-commission-card {
     --transition-duration: 0.4s;
-    @apply relative flex h-full flex-col justify-between overflow-hidden rounded-2xl;
+    @apply relative flex h-full w-full flex-col justify-between overflow-hidden rounded-2xl;
 
     &-background {
         @apply absolute;
